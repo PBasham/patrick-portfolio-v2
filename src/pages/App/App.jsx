@@ -2,12 +2,15 @@
         Import Pages & Components
 ========================================*/
 import { ProfilePage } from "../ProfilePage/ProfilePage.jsx"
-function App() {
+/*========================================
+        Import Styling
+========================================*/
+import "../../components/NavBar/NavBar.css"
+
+export default function App() {
   return (
     <div className="App">
         <ProfilePage />
     </div>
   );
 }
-
-export default App;

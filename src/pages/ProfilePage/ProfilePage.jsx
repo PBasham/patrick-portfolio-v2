@@ -15,8 +15,15 @@ import { Projects } from "../../components/Projects/Projects"
 
 
 export const ProfilePage = () => {
+
+    
   return (
-    <div>ProfilePage</div>
+    <div className="profile-page">
+        <NavBar />
+        <div className="page-content-wrapper">
+
+        </div>
+    </div>
   )
 }
 

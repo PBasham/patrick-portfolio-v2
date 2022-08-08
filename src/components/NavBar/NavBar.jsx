@@ -1,5 +1,7 @@
 export const NavBar = () => {
-  return (
-    <div>NavBar</div>
-  )
+    return (
+        <div className="nav-bar">
+            NavBar
+        </div>
+    )
 }
