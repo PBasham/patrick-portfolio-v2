@@ -1,7 +1,7 @@
 /*========================================
         Import Pages & Components
 ========================================*/
-import ProfilePage from "../ProfilePage/ProfilePage.jsx"
+import { ProfilePage } from "../ProfilePage/ProfilePage.jsx"
 function App() {
   return (
     <div className="App">
