@@ -1,3 +1,6 @@
+/* font-family: 'Poiret One', cursive; */
+/* font-family: 'Red Hat Text', sans-serif; */
+
 :root {
     
 }
@@ -13,6 +16,7 @@
 body {
     position: relative;
     color: white;
+    font-family: 'Red Hat Text', sans-serif;
 }
 
 .App {

@@ -1,0 +1,42 @@
+.nav {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1.25fr 1fr 1fr;
+    height: 100%;
+    width: clamp(200px, 20vw, 225px);
+    background:
+        linear-gradient(50deg, rgba(96, 58, 105, 0.8) 15%, rgba(40, 174, 170, 0.8) 80%);
+
+    > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2em;
+    }
+    a {
+        color: black;
+        font-size: 1.5rem;
+    }
+    &-logo {}
+    &-btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font-weight: lighter;
+    }
+    &-btn {
+        margin: .4em;
+        font-size: 1.5rem;
+        color: grey;
+        cursor: pointer;
+    }
+    &-btn.active {
+        color: white;
+    }
+    &-socials {
+        align-self: flex-start;
+    }
+}

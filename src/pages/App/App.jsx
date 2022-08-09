@@ -5,7 +5,7 @@ import { ProfilePage } from "../ProfilePage/ProfilePage.jsx"
 /*========================================
         Import Styling
 ========================================*/
-import "../../components/NavBar/NavBar.css"
+import "../../components/NavBar/NavBar.scss"
 
 export default function App() {
   return (
