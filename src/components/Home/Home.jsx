@@ -14,21 +14,21 @@ export const Home = ({ navLinks, setNavLinks }) => {
                 <div className="text">
                     <h1>Hello,</h1>
                     <p>My name is Patrick Basham and I
-                        <span className="typed-text text-teal">
-                            <Typewriter
-                                options={{
-                                    strings: [
-                                        "am a software engineer.",
-                                        "thrive to optimize.",
-                                        "am always looking to learn more.",
-                                        "am highly motivated.",
-                                        "love to code!",
-                                    ],
-                                    autoStart: true,
-                                    loop: true,
-                                }}
-                            />
-                        </span>
+                    </p>
+                    <p className="typed-text text-teal">
+                        <Typewriter
+                            options={{
+                                strings: [
+                                    "am a software engineer.",
+                                    "thrive to optimize.",
+                                    "am always looking to learn more.",
+                                    "am highly motivated.",
+                                    "love to code!",
+                                ],
+                                autoStart: true,
+                                loop: true,
+                            }}
+                        />
                     </p>
                 </div>
                 <a onClick={() => {
