@@ -1,5 +1,7 @@
 export const Projects = () => {
-  return (
-    <div>Projects</div>
-  )
+    return (
+        <div className="section-projects">
+            Projects
+        </div>
+    )
 }

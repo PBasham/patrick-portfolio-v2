@@ -24,20 +24,22 @@ export const ProfilePage = () => {
     })
 
     useEffect(() => {
-        setNavLinks({...navLinks,
-            allNavLinks: getNavLinks()})
-    },[])
+        setNavLinks({
+            ...navLinks,
+            allNavLinks: getNavLinks()
+        })
+    }, [])
 
-  return (
-    <div className="profile-page">
-        <NavBar navLinks={navLinks} setNavLinks={setNavLinks} />
-        <div className="page-content-wrapper">
-            {navLinks.activeNavLink === 0 ?  <Home /> : null}
-            {navLinks.activeNavLink === 1 ?  <About /> : null}
-            {navLinks.activeNavLink === 2 ?  <Projects /> : null}
-            {navLinks.activeNavLink === 3 ?  <Contact /> : null}
+    return (
+        <div className="profile-page">
+            <NavBar navLinks={navLinks} setNavLinks={setNavLinks} />
+            <div className="section">
+                {navLinks.activeNavLink === 0 ? <Home /> : null}
+                {navLinks.activeNavLink === 1 ? <About /> : null}
+                {navLinks.activeNavLink === 2 ? <Projects /> : null}
+                {navLinks.activeNavLink === 3 ? <Contact /> : null}
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
