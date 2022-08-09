@@ -3,7 +3,7 @@
 ========================================*/
 import Typewriter from "typewriter-effect"
 
-export const Home = () => {
+export const Home = ({ navLinks, setNavLinks }) => {
     return (
         <div className="section-home">
             <div className="img-div">
@@ -31,7 +31,9 @@ export const Home = () => {
                         </span>
                     </p>
                 </div>
-                <a>Hire me</a>
+                <a onClick={() => {
+                    setNavLinks({ ...navLinks, activeNavLink: 3 })
+                }}>Hire me</a>
             </div>
         </div>
     )

@@ -34,7 +34,7 @@ export const ProfilePage = () => {
         <div className="profile-page">
             <NavBar navLinks={navLinks} setNavLinks={setNavLinks} />
             <div className="section">
-                {navLinks.activeNavLink === 0 ? <Home /> : null}
+                {navLinks.activeNavLink === 0 ? <Home navLinks={navLinks} setNavLinks={setNavLinks}/> : null}
                 {navLinks.activeNavLink === 1 ? <About /> : null}
                 {navLinks.activeNavLink === 2 ? <Projects /> : null}
                 {navLinks.activeNavLink === 3 ? <Contact /> : null}
