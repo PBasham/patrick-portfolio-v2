@@ -2,6 +2,7 @@
         Import Dependencies
 ========================================*/
 import { useState, useEffect } from "react"
+import { getNavLinks } from "../../Data/NavBarLinks.js"
 /*========================================
         Import Components
 ========================================*/
@@ -17,31 +18,19 @@ import { contact } from "../../components/Contact/Contact"
 
 export const ProfilePage = () => {
 
-    const [navlink, setNavLinks] = useState({
-        activeNavLink: null,
-        navLinks: [
-            {
-                id: 0,
-                name: "HOME",
-            },
-            {
-                id: 1,
-                name: "ABOUT",
-            },
-            {
-                id: 2,
-                name: "PROJECTS",
-            },
-            {
-                id: 3,
-                name: "CONTACT",
-            },
-        ]
+    const [navLinks, setNavLinks] = useState({
+        activeNavLink: 0,
+        allNavLinks: []
     })
+
+    useEffect(() => {
+        setNavLinks({...navLinks,
+            allNavLinks: getNavLinks()})
+    },[])
 
   return (
     <div className="profile-page">
-        <NavBar />
+        <NavBar navLinks={navLinks} setNavLinks={setNavLinks} />
         <div className="page-content-wrapper">
 
         </div>
