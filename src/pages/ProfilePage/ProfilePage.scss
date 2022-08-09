@@ -19,6 +19,9 @@
         width: 80%;
 
         .img-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 60vh;
             width: 30vw;
             border-radius: 20px;
