@@ -2,6 +2,7 @@ const navLinks = [
     {
         id: 0,
         name: "HOME",
+        
     },
     {
         id: 1,
