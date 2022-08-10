@@ -7,19 +7,22 @@
     background:
         linear-gradient(50deg, rgba(96, 58, 105, 0.8) 15%, rgba(40, 174, 170, 0.8) 80%);
 
-    > div {
+    >div {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         padding: 2em;
     }
+
     a {
         color: black;
         font-size: 1.5rem;
     }
+
     &-logo {}
-    &-btns{
+
+    &-btns {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -27,16 +30,31 @@
         list-style: none;
         font-weight: lighter;
     }
+
     &-btn {
         margin: .4em;
         font-size: 1.5rem;
         color: grey;
         cursor: pointer;
+        transition: 250ms ease;
+
+        &:hover,
+        &.active {
+            color: white;
+        }
     }
-    &-btn.active {
-        color: white;
-    }
+
     &-socials {
         align-self: flex-start;
+
+        i {
+            font-size: 2rem;
+            margin-bottom: .5em;
+        }
+
+        :hover {
+            transition: 250ms ease;
+            color: white;
+        }
     }
 }
