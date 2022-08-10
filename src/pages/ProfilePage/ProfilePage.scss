@@ -88,12 +88,12 @@
             justify-content: flex-end;
             align-items: center;
             height: 50%;
-            box-shadow: 0 0 1px 1px aqua;
+            // box-shadow: 0 0 1px 1px aqua;
 
             .quote {
                 width: 45%;
                 font-size: 3rem;
-                box-shadow: 0 0 1px 1px aqua;
+                // box-shadow: 0 0 1px 1px aqua;
 
 
                 p {
@@ -108,10 +108,64 @@
             }
         }
 
-        .cards-div {
-            height: 50%;
-            width: 100%;
-            box-shadow: 0 0 1px 1px aqua;
+        .about {
+            &-cards {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 50%;
+                width: 100%;
+                // box-shadow: 0 0 1px 1px aqua;
+            }
+
+            &-card {
+                display: grid;
+                place-items: center;
+                position: relative;
+                padding: 20px;
+                width: clamp(200px, 20vw, 300px);
+                height: 200px;
+                text-align: justify;
+                border-radius: 15px;
+                background-color: rgb(75, 143, 149);
+                transition: 500ms ease;
+
+                &-name {
+                    display: grid;
+                    place-items: center;
+                    position: relative;
+                    width: 70px;
+                    height: 100px;
+                    background-color: rgba(16,20,9, .5);
+                    .title {
+                        text-align: center;
+                        line-height: 2rem;
+                    }
+                }
+
+                &-name::before {
+                    content: "";
+                    position: absolute;
+                    right: -30px;
+                    width: 0;
+                    border-left: 30px solid rgba(16,20,9, .5);
+                    border-top: 50px solid transparent;
+                    border-bottom: 50px solid transparent;
+                }
+                &-name::after {
+                    content: "";
+                    position: absolute;
+                    left: -30px;
+                    width: 0;
+                    border-right: 30px solid rgba(16,20,9, .5);
+                    border-top: 50px solid transparent;
+                    border-bottom: 50px solid transparent;
+                }
+                &.active {
+                    color: black;
+                    background-color: white;
+                }
+            }
         }
     }
 

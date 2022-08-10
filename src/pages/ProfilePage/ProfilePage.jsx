@@ -3,6 +3,7 @@
 ========================================*/
 import { useState, useEffect } from "react"
 import { getNavLinks } from "../../Data/NavBarLinks.js"
+import { getAboutCards } from "../../Data/AboutCards.js"
 /*========================================
         Import Components
 ========================================*/
