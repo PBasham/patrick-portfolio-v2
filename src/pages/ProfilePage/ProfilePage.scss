@@ -251,7 +251,7 @@
                     width: clamp(200px, 60%, 60%);
                     border-bottom: 4px solid rgb(139, 133, 109);
 
-                    div + div {
+                    li + li {
                         border-left: 1px solid rgb(139, 133, 109);
                     }
                 }
@@ -265,6 +265,8 @@
                     height: 30px;
                     font-size: 1.2rem;
                     color: rgb(115,115,115);
+                    cursor: pointer;
+                    user-select: none;
                     &.active {
                         color: rgb(237,221,157);
                     }
