@@ -114,3 +114,10 @@ const projects = [{
 export const getProjects = () => {
     return projects
 }
+
+export const groups = () => {
+    return [
+        "Personal",
+        "Bootcamp",
+    ]
+}
