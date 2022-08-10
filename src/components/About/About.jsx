@@ -10,7 +10,7 @@ export const About = ({aboutCards}) => {
         <div className="section-about">
             <div className="quote-div">
                 <div className="quote">
-                    <p>The electric light did not come from the continuous improvement of candles</p>
+                    <p id="quote">The electric light did not come from the continuous improvement of candles</p>
                     <p>- Oren Harari</p>
                 </div>
             </div>
