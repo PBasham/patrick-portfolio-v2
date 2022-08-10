@@ -163,7 +163,6 @@
                         text-align: center;
                         line-height: 2rem;
                         user-select: none;
-                        transition: 500ms ease;
 
                     }
                 }
@@ -176,7 +175,7 @@
                     border-left: 30px solid rgba(16, 20, 9, .5);
                     border-top: 50px solid transparent;
                     border-bottom: 50px solid transparent;
-                transition: 500ms ease;
+                    transition: 500ms ease;
 
                 }
 
@@ -188,15 +187,12 @@
                     border-right: 30px solid rgba(16, 20, 9, .5);
                     border-top: 50px solid transparent;
                     border-bottom: 50px solid transparent;
-                transition: 500ms ease;
+                    transition: 500ms ease;
 
                 }
 
                 &.active {
-                    color: black;
                     height: 300px;
-                    background-color: white;
-                    transition: 500ms ease;
 
                 }
 
@@ -213,9 +209,9 @@
                     background-color: rgba(16, 20, 9, .5);
                     transition: 500ms ease;
 
+
                     .description {
                         text-align: center;
-                        transition: 500ms ease;
 
                     }
                 }
