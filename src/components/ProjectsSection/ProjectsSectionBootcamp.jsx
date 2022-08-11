@@ -1,7 +1,11 @@
+import { ProjectCard } from "../ProjectCard/ProjectCard"
+
 export const ProjectsSectionBootcamp = ({ projectsBc }) => {
     return (
         <>
-            Bootcamp
+            {projectsBc.allProjects.map(project => (
+                <ProjectCard key={project.id} project={project}/>
+            ))}
         </>
     )
 }

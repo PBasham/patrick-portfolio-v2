@@ -15,7 +15,7 @@
 
     >div {
         display: flex;
-        width: 100%;
+        width: clamp(600px, 100%, 1500px);
         padding: 40px;
         box-shadow: inset 0 0 1px 1px blue;
     }
@@ -251,11 +251,11 @@
                     width: clamp(200px, 60%, 60%);
                     border-bottom: 4px solid rgb(139, 133, 109);
 
-                    li + li {
+                    li+li {
                         border-left: 1px solid rgb(139, 133, 109);
                     }
                 }
-                
+
                 &-btn {
                     display: flex;
                     justify-content: center;
@@ -264,11 +264,12 @@
                     padding: 10px;
                     height: 30px;
                     font-size: 1.2rem;
-                    color: rgb(115,115,115);
+                    color: rgb(115, 115, 115);
                     cursor: pointer;
                     user-select: none;
+
                     &.active {
-                        color: rgb(237,221,157);
+                        color: rgb(237, 221, 157);
                     }
                 }
 
@@ -279,8 +280,27 @@
             }
 
             &-list {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 height: 40%;
                 box-shadow: 0 0 1px 1px pink;
+                
+                .project {
+                    &-card {
+                        position: relative;
+                        width: 300px;
+                        height: 200px;
+                        border-radius: 20px;
+                        overflow: hidden;
+                        box-shadow: 0 0 1px 1px pink;
+
+                        img {
+                            position: absolute;
+                            height: 100%;
+                        }
+                    }
+                }
             }
         }
     }
