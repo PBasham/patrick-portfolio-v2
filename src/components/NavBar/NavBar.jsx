@@ -1,8 +1,3 @@
-/*========================================
-        Import Styling
-========================================*/
-import "../../components/NavBar/NavBar.scss"
-
 export const NavBar = ({ navLinks, setNavLinks }) => {
 
 

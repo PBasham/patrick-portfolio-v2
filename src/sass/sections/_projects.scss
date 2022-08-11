@@ -1,0 +1,87 @@
+@use "../abstracts/" as *;
+
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    >div {
+        width: 100%;
+    }
+
+    .project {
+        &-detail {
+            height: 50%;
+            box-shadow: 0 0 1px 1px pink;
+        }
+
+        &-nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            height: 10%;
+            box-shadow: 0 0 1px 1px pink;
+
+            &-btns {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin: 5px 0;
+                width: clamp(200px, 60%, 60%);
+                border-bottom: 4px solid $color-accentOne;
+
+                li+li {
+                    border-left: 1px solid $color-accentOne;
+                }
+            }
+
+            &-btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px 0;
+                padding: 10px;
+                height: 30px;
+                font-size: 1.2rem;
+                color: $color-lightGrey;
+                cursor: pointer;
+                user-select: none;
+
+                &.active {
+                    color: $color-lightYellow;
+                }
+            }
+
+            &-bar {
+                // height: 5px;
+                // width: 60%;
+            }
+        }
+
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // flex-wrap: wrap;
+            height: 40%;
+            box-shadow: 0 0 1px 1px pink;
+            
+            .project {
+                &-card {
+                    position: relative;
+                    width: 300px;
+                    height: 200px;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    box-shadow: 0 0 1px 1px pink;
+
+                    img {
+                        position: absolute;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

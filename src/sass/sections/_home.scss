@@ -1,0 +1,60 @@
+@use "../abstracts/" as abstracts;
+
+.section-home {
+    justify-content: center;
+
+    .img-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        width: 30vw;
+        border-radius: 20px;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .text-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        padding: 0 0 20px 50px;
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 2rem;
+        }
+
+        .text {
+            position: relative;
+        }
+
+        .typed-text {
+            position: absolute;
+        }
+    }
+
+    a {
+        margin: 100px auto 0 auto;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        color: black;
+        cursor: pointer;
+        background-color: abstracts.$color-yellow;
+        transition: 250ms ease;
+    }
+    
+    a:hover {
+        background-color: abstracts.$color-yellowHover;
+    }
+}

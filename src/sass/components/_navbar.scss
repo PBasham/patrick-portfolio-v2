@@ -1,3 +1,5 @@
+@use "../abstracts/" as *;
+
 .nav {
     display: grid;
     grid-template-columns: 100%;
@@ -34,7 +36,7 @@
     &-btn {
         margin: .4em;
         font-size: 1.5rem;
-        color: grey;
+        color: $color-lightGrey;
         cursor: pointer;
         transition: 250ms ease;
 

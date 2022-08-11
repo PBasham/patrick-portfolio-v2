@@ -1,0 +1,22 @@
+.profile-page {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    > div {
+        display: flex;
+        width: clamp(600px, 100%, 1500px);
+        padding: 40px;
+        box-shadow: inset 0 0 1px 1px blue;
+    }
+}
