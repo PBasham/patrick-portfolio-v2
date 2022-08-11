@@ -9,8 +9,8 @@ import "../../sass/styles.scss"
 
 export default function App() {
   return (
-    <div className="App">
+    <>
         <ProfilePage />
-    </div>
+    </>
   );
 }
