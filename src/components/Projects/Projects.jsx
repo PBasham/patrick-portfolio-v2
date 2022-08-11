@@ -34,7 +34,7 @@ export const Projects = () => {
     const projectsBc = getProjects()
 
 
-    const [selectedProject, setSelectedProject] = useState({})
+    const [selectedProject, setSelectedProject] = useState(null)
 
     const handleBcProjClick = (id) => {
         setSelectedProject(projectsBc[id])
