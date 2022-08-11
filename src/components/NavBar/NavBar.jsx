@@ -1,3 +1,8 @@
+/*========================================
+        Import Dependencies
+========================================*/
+import { Link as LinkScroll } from "react-scroll"
+
 export const NavBar = ({ navLinks, setNavLinks }) => {
 
 
@@ -9,11 +14,15 @@ export const NavBar = ({ navLinks, setNavLinks }) => {
                     <li
                         key={link.id}
                     >
-                        <a
-                            href={link.to} className={`nav-btn ${link.id === navLinks.activeNavLink ? "active" : ""}`}
-                            onClick={() => { setNavLinks({ ...navLinks, activeNavLink: link.id }) }}>
+                        <LinkScroll
+                            to={link.to}
+                            className={`nav-btn ${link.id === navLinks.activeNavLink ? "active" : ""}`}
+                            onClick={() => { setNavLinks({ ...navLinks, activeNavLink: link.id }) }}
+                            smooth={true}
+                            duration={750}
+                            >
                             {link.name}
-                        </a>
+                        </LinkScroll>
                     </li>
                 ))}
             </ul>
