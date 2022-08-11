@@ -1,7 +1,7 @@
-export const ProjectDetail = () => {
+export const ProjectDetail = ({ selectedProject }) => {
     return (
         <div className="project-detail">
-            ProjectDetail
+            {selectedProject.title}
         </div>
     )
 }
