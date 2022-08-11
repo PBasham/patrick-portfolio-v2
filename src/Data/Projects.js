@@ -61,7 +61,7 @@ const projects = [
         sort: 1,
         title: "Dungeon Fighter",
         img: "https://github.com/PBasham/Dungeon-fighter/blob/main/imgs/ReadMe/wireframe_startScreen.png?raw=true",
-        description: "This was my very first project for my bootcamp General Assembly, the goal was to create a game using html Canvas and Javascript that had a win and lose condition. This features animations within canvas with javascript to handle the logic for interactions. I really enjoyed this project because building games is somehting I really want to do as a hobby.",
+        description: "This was my very first project for my bootcamp General Assembly, the goal was to create a game using html Canvas and Javascript that had a win and lose condition. This features animations within canvas with javascript to handle the logic for interactions.",
         technologies: [
             <i className="fa-brands fa-html5"></i>,
             <i className="fa-brands fa-css3-alt"></i>,
@@ -81,7 +81,7 @@ const projects = [
     {
         id: 3,
         sort: 1,
-        title: "Pokemon-Tracker",
+        title: "Pokemon Tracker",
         img: "https://github.com/PBasham/Pokemon-Tracker/blob/main/imgs/readme/PT-MainPage.png?raw=true",
         description: "Pokemon-Tracker is my second project for my bootcamp, it makes use of a free pokemon api to populate the ''pokedex'' with amost 1,000 pokemon. From this ''pokedex'', you as a user can view stats for an individual pokemon as well as add them to / create a team of up to 5 pokemon of your choice, name it and share it for anyone to be able to view. This website used full CRUD functionality and stores all of the data using MongoAtlas.",
         technologies: [
