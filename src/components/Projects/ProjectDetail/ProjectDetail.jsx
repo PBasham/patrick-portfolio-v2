@@ -14,7 +14,7 @@ export const ProjectDetail = ({ selectedProject }) => {
                         Technologies:
                         <ul className="technologies">
                             {selectedProject.technologies.map((tech, index) => (
-                                <li>{tech}</li>
+                                <li key={index}>{tech}</li>
                             ))
                             }
                         </ul>
