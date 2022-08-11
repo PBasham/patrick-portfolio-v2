@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect"
 
 export const Home = ({ navLinks, setNavLinks }) => {
     return (
-        <div className="section-home">
+        <div id="home" className="section-home">
             <div className="home-content">
 
                 <div className="img-div">
