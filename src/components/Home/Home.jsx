@@ -17,7 +17,7 @@ export const Home = ({ navLinks, setNavLinks }) => {
                         <h1>Hello,</h1>
                         <p>My name is Patrick Basham and I
                         </p>
-                        <p className="typed-text text-teal">
+                        <div className="typed-text text-teal">
                             <Typewriter
                                 options={{
                                     strings: [
@@ -31,7 +31,7 @@ export const Home = ({ navLinks, setNavLinks }) => {
                                     loop: true,
                                 }}
                             />
-                        </p>
+                        </div>
                     </div>
                     <a onClick={() => {
                         setNavLinks({ ...navLinks, activeNavLink: 3 })
