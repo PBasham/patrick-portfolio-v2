@@ -17,8 +17,6 @@ export const AboutCards = () => {
     }, [])
 
     const handleClick = (id) => {
-        console.log("id", id)
-        console.log("aboutCards", aboutCards[id].active)
         const updatedCard = aboutCards.map(card => {
             if (card.id === id) {
                 return { ...card, active: !card.active }
