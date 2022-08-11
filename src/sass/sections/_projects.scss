@@ -67,8 +67,8 @@
 
             .project {
                 &-card {
-                    display: grid;
-                    place-items: center;
+                    display: flex;
+                    justify-content: center;
                     position: relative;
                     margin: .5em;
                     width: clamp(200px, 20vw, 250px);
@@ -104,6 +104,7 @@
                         display: grid;
                         place-items: center;
                         position: relative;
+                        margin-top: 20px;
                         width: clamp(80px, 1rem + 6vw,100px);
                         height: 100px;
                         background-color: $color-cardOverlay;
