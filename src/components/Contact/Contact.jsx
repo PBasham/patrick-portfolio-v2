@@ -1,6 +1,6 @@
 export const Contact = () => {
     return (
-        <div className="section-contact">
+        <div id="contact" className="section-contact">
             Contact
         </div>
     )

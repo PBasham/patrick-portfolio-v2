@@ -8,9 +8,13 @@ export const NavBar = ({ navLinks, setNavLinks }) => {
                 {navLinks.allNavLinks.map((link) => (
                     <li
                         key={link.id}
-                        className={`nav-btn ${link.id === navLinks.activeNavLink ? "active" : ""}`}
-                        onClick={() => {setNavLinks({...navLinks, activeNavLink: link.id})}}
-                    >{link.name}</li>
+                    >
+                        <a
+                            href={link.to} className={`nav-btn ${link.id === navLinks.activeNavLink ? "active" : ""}`}
+                            onClick={() => { setNavLinks({ ...navLinks, activeNavLink: link.id }) }}>
+                            {link.name}
+                        </a>
+                    </li>
                 ))}
             </ul>
             <div className="nav-socials">

@@ -47,7 +47,7 @@ export const Projects = () => {
         })
     }
     return (
-        <div className="section-projects">
+        <div id="projects" className="section-projects">
             <ProjectDetail
                 selectedProject={selectedProject}
             />

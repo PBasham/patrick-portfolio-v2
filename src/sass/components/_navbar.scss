@@ -9,7 +9,7 @@
     height: 100vh;
     background:
         linear-gradient(50deg, rgba(96, 58, 105, 0.8) 15%, rgba(40, 174, 170, 0.8) 80%);
-        z-index: 99;
+    z-index: 99;
 
     >div {
         display: flex;
@@ -17,11 +17,6 @@
         align-items: center;
         flex-direction: column;
         padding: 2em;
-    }
-
-    a {
-        color: black;
-        font-size: 1.5rem;
     }
 
     &-logo {}
@@ -34,13 +29,17 @@
         list-style: none;
         font-weight: lighter;
     }
+    li {
 
-    &-btn {
         margin: .4em;
+    }
+    &-btn {
         font-size: 1.5rem;
-        color: $color-lightGrey;
         cursor: pointer;
+        color: $color-lightGrey;
+        text-decoration: none;
         transition: 250ms ease;
+
 
         &:hover,
         &.active {
@@ -52,10 +51,10 @@
         align-self: flex-start;
 
         i {
-            font-size: 2rem;
             margin-bottom: .5em;
+            font-size: 2rem;
+            color: black;
         }
-
         :hover {
             transition: 250ms ease;
             color: white;
