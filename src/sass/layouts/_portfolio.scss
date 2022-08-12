@@ -16,8 +16,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
         max-width: 1500px;
         padding: 40px;
-        // box-shadow: 0 0 1px 1px blue;
+        @media (max-width: 1000px) {
+            padding: 0;
+        }
     }
 }
