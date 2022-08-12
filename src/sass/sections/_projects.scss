@@ -21,12 +21,19 @@
         &-detail {
             display: grid;
             grid-template-columns: 400px 1fr;
+            
+            .placeholder-text {
+                grid-column: 1/3;
+                text-align: center;
+                align-self: center;
+            }
             @media (max-width: 1000px) {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                // grid-template-columns: 1fr;
-                // grid-template-rows: repeat(2, 2fr);
+                .placeholder-text {
+                    margin: auto;
+                }
             }
 
             min-height: 400px;
