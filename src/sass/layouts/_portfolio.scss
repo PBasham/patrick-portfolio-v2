@@ -1,6 +1,7 @@
 .profile-page {
     display: flex;
     position: relative;
+    // background-color: blue;
 }
 
 .section {
@@ -15,7 +16,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: clamp(600px, 100%, 1500px);
+        max-width: 1500px;
         padding: 40px;
         // box-shadow: 0 0 1px 1px blue;
     }
