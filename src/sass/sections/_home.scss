@@ -1,4 +1,4 @@
-@use "../abstracts/" as abstracts;
+@use "../abstracts/" as *;
 
 .section-home {
     justify-content: center;
@@ -16,7 +16,6 @@
         align-items: center;
         height: 60vh;
         // min-width: 30vw;
-        border-radius: 20px;
         overflow: hidden;
 
         img {
@@ -45,23 +44,23 @@
 
         .typed-text {
             position: absolute;
+            font-size: 2rem;
         }
     }
 
     a {
         margin: 100px auto 0 auto;
         padding: 8px 15px;
-        border-radius: 20px;
         font-size: 1rem;
         font-weight: bold;
         border: none;
         color: black;
         cursor: pointer;
-        background-color: abstracts.$color-yellow;
+        background-color: $color-yellow;
         transition: 250ms ease;
     }
     
     a:hover {
-        background-color: abstracts.$color-yellowHover;
+        background-color: $color-yellowHover;
     }
 }

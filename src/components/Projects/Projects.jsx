@@ -24,15 +24,15 @@ export const Projects = () => {
                 id: 1,
                 name: "Bootcamp",
             },
-            {
-                id: 2,
-                name: "View All",
-            },
+            // {
+            //     id: 2,
+            //     name: "View All",
+            // },
         ]
     })
 
     const projectsBc = getProjects()
-
+    
 
     const [selectedProject, setSelectedProject] = useState(null)
 

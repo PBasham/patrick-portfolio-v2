@@ -1,3 +1,71 @@
+@use "../abstracts/" as *;
+
 .section-contact {
     height: 100vh;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        label {
+            display: block;
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: $color-lightYellow;
+
+            /*==============================
+                Styling for chrome autocomplete.
+            ==============================*/
+            input:-webkit-autofill,
+            input:-webkit-autofill:hover,
+            input:-webkit-autofill:focus,
+            textarea:-webkit-autofill,
+            textarea:-webkit-autofill:hover,
+            textarea:-webkit-autofill:focus,
+            select:-webkit-autofill,
+            select:-webkit-autofill:hover,
+            select:-webkit-autofill:focus {
+                -webkit-text-fill-color: $color-lightYellow;
+                -webkit-box-shadow: 0 0 0px 1000px $color-greyaccent inset;
+            }
+
+            input,
+            textarea {
+                display: block;
+                padding: 10px;
+                width: clamp(300px, 50vw, 500px);
+                min-height: 30px;
+                font-size: 1rem;
+                font-family: $font-body;
+                color: $color-lightYellow;
+                border: none;
+                border-top: 3px solid $color-accentOne;
+                background-color: $color-greyaccent;
+                outline: none;
+                transition: 500ms ease;
+
+                &:focus {
+                    box-shadow: 0 0 2px 2px $color-accentOne;
+                }
+            }
+        }
+
+
+        input[type="submit"] {
+            margin: 20px;
+            padding: 8px 15px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            color: black;
+            cursor: pointer;
+            background-color: $color-yellow;
+            transition: 250ms ease;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: $color-yellowHover;
+        }
+    }
 }
