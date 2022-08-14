@@ -3,8 +3,7 @@
 .nav {
     display: grid;
     grid-template-columns: 175px;
-    grid-template-rows: 1.25
-    fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr 1fr;
     position: sticky;
     top: 0;
     min-height: 100vh;
@@ -19,9 +18,17 @@
         align-items: center;
         flex-direction: column;
         padding: 2em;
+        // min-height: 150px;
     }
 
-    &-logo {}
+    &-logo {
+        position: relative;
+        img {
+            padding: 2em;
+            position: absolute;
+            width: 130%;
+        }
+    }
 
     &-btns {
         display: flex;

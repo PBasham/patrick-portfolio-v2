@@ -8,7 +8,9 @@ export const NavBar = ({ navLinks, setNavLinks }) => {
 
     return (
         <div className="nav">
-            <div className="nav-logo">Nav Logo</div>
+            <div className="nav-logo">
+                <img src="./img/logo.png" alt="" />
+            </div>
             <ul className="nav-btns">
                 {navLinks.allNavLinks.map((link) => (
                     <li

@@ -2,7 +2,7 @@ export const ProjectDetail = ({ selectedProject }) => {
     return (
         <div className="project-detail">
             {!selectedProject ?
-                <p className="placeholder-text">Select a project to view more about it</p>
+                <p className="placeholder-text">Select a project to view details</p>
                 :
                 <>
                     <div className="project-detail-img">

@@ -39,8 +39,8 @@ export const ProfilePage = () => {
                     <Contact /> */}
                     {navLinks.activeNavLink === 0 ? <Home navLinks={navLinks} setNavLinks={setNavLinks} /> : null}
                     {navLinks.activeNavLink === 1 ? <About /> : null}
-                    {navLinks.activeNavLink === 2 ? <Projects /> : null}
-                    {navLinks.activeNavLink === 3 ? <Skills /> : null}
+                    {navLinks.activeNavLink === 2 ? <Skills /> : null}
+                    {navLinks.activeNavLink === 3 ? <Projects /> : null}
                     {navLinks.activeNavLink === 4 ? <Contact /> : null}
                 </div>
             </div>

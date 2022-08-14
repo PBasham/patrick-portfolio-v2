@@ -41,6 +41,7 @@ export const Projects = () => {
     }
 
     const handleNavClick = (id) => {
+        setSelectedProject(null)
         setProjectsNav({
             ...projectsNav,
             activeSection: id,
@@ -53,7 +54,7 @@ export const Projects = () => {
             />
             <div className="project-nav">
                 <ProjectNav projectsNav={projectsNav} setProjectsNav={setProjectsNav} handleNavClick={handleNavClick} />
-                <div className="project-nav-bar"></div>
+                {/* <div className="project-nav-bar"></div> */}
             </div>
             <div className="project-list">
                 {projectsNav.activeSection === 0 ?

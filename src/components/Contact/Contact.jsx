@@ -5,6 +5,7 @@ export const Contact = () => {
     // }
     return (
         <div id="contact" className="section-contact">
+            <p>Contact me to chat about job or freelance opportunities</p>
             <form action="https://formsubmit.co/1297a0fa1a7f93e4f761fce3583a363c" method="POST">
                 <label htmlFor="email">Email<input name="email" type="email" /></label>
                 <label htmlFor="name">Name<input name="name" type="text" /></label>
