@@ -21,7 +21,7 @@ export const ProjectDetail = ({ selectedProject }) => {
                         {/* {selectedProject.collaboration} */}
                         {/* {selectedProject.team} */}
                         <div className="links">
-                            {selectedProject.githubLink ? <a href={selectedProject.githubLink} target="_blank">Github Link</a> : null}
+                            {selectedProject.githubLink ? <a href={selectedProject.githubLink} target="_blank">Github</a> : null}
                             {selectedProject.deploymentLink ? <a href={selectedProject.deploymentLink} target="_blank">Deployment</a> : null}
                         </div>
 
