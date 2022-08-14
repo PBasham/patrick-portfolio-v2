@@ -31,7 +31,7 @@ export const Home = ({ navLinks, setNavLinks }) => {
                                     autoStart: true,
                                     loop: true,
                                 }}
-                            />
+                            />ß
                         </div>
                     </div>
                     <a onClick={() => {

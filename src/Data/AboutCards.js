@@ -22,9 +22,9 @@ const aboutCards = [
     },
     {
         id: 3,
-        img: "https://www.investors.com/wp-content/uploads/2016/03/4SECRET-030316-shutterstock.jpg",
-        name: "Ambition",
-        detail: "I love to learn!",
+        img: "https://cdn.mos.cms.futurecdn.net/y9siWhBdEnkwL9HhGakpQK.jpg",
+        name: "Hobbies",
+        detail: "Hobbies!",
         active: false,
     },
 ]
