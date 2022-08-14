@@ -122,6 +122,7 @@
             flex-direction: column;
             justify-content: flex-end;
             align-items: flex-end;
+            margin-right: 2em;
             height: 75px;
 
             &-btns {
@@ -135,7 +136,7 @@
                 ::before {
                     content: "";
                     position: absolute;
-                    left: -11.5px;
+                    left: -13px;
                     bottom: -9px;
                     padding: 3px;
                     transform: rotate(45deg);
@@ -145,7 +146,7 @@
                 ::after {
                     content: "";
                     position: absolute;
-                    right: -11.5px;
+                    right: -13px;
                     bottom: -9px;
                     padding: 3px;
                     transform: rotate(45deg);
@@ -182,7 +183,7 @@
         &-list {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             flex-wrap: wrap;
             padding: 0 2em;
             margin-top: 2em;
