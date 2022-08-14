@@ -16,9 +16,11 @@ export const ProjectCard = ({ project, handleProjectClick }) => {
         >
             <div className="img-div">
                 <img src={project.img} alt="" />
-            </div>
-            <div className="project-card-front">
-                <p className="title">{project.title}</p>
+                <div className="title-shape-div">
+                    <div className="project-card-front">
+                        <p className="title">{project.title}</p>
+                    </div>
+                </div>
             </div>
             <ul className="technologies">
                 {project.technologies.map((tech, index) => (

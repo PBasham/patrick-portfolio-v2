@@ -217,8 +217,19 @@
                         height: 200px;
                         border-radius: 20px;
                         margin-bottom: 1em;
+                        position: relative;
                         overflow: hidden;
-
+                        z-index: 50;
+                        .title-shape-div {
+                            display: grid;
+                            place-items: center;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            // height: 300px;
+                            position: absolute;
+                        }
                         img {
                             width: 500px;
                             height: 300px;
@@ -260,56 +271,46 @@
                     &-front {
                         display: grid;
                         place-items: center;
-                        position: absolute;
-                        top: 0;
-                        text-align: center;
-                        width: 100%;
-                        height: 50px;
-                        font-size: 1.2rem;
-                        color: $color-lightYellow;
-                        // width: clamp(80px, 1rem + 6vw, 100px);
-                        // height: 100px;
+                        position: relative;
+                        width: clamp(100px, 50%, 50%);
+                        height: 100px;
                         background-color: $color-cardOverlay;
                         transition: 500ms ease;
-
+                        z-index: 99;
+        
                         .title {
-                            // display: flex;
-                            // justify-content: center;
-                            // align-items: center;
-                            // position: absolute;
-                            // text-align: center;
-                            // // line-height: 2rem;
-                            // user-select: none;
-                            // font-size: 1.2rem;
-                            // z-index: 98;
-
-                            // p {}
+                            position: absolute;
+                            text-align: center;
+                            font-size: 1.4rem;
+                            line-height: 2rem;
+                            user-select: none;
+                            z-index: 100;
                         }
                     }
-
-                    // &-front::before {
-                    //     content: "";
-                    //     position: absolute;
-                    //     right: -30px;
-                    //     width: 0;
-                    //     border-left: 30px solid $color-cardOverlay;
-                    //     border-top: 50px solid transparent;
-                    //     border-bottom: 50px solid transparent;
-                    //     transition: 500ms ease;
-
-                    // }
-
-                    // &-front::after {
-                    //     content: "";
-                    //     position: absolute;
-                    //     left: -30px;
-                    //     width: 0;
-                    //     border-right: 30px solid $color-cardOverlay;
-                    //     border-top: 50px solid transparent;
-                    //     border-bottom: 50px solid transparent;
-                    //     transition: 500ms ease;
-
-                    // }
+        
+                    &-front::before {
+                        content: "";
+                        position: absolute;
+                        right: -30px;
+                        width: 0;
+                        border-left: 30px solid $color-cardOverlay;
+                        border-top: 50px solid transparent;
+                        border-bottom: 50px solid transparent;
+                        transition: 500ms ease;
+        
+                    }
+        
+                    &-front::after {
+                        content: "";
+                        position: absolute;
+                        left: -30px;
+                        width: 0;
+                        border-right: 30px solid $color-cardOverlay;
+                        border-top: 50px solid transparent;
+                        border-bottom: 50px solid transparent;
+                        transition: 500ms ease;
+        
+                    }
 
                     // &.active {
                     //     height: 300px;

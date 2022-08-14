@@ -2,7 +2,7 @@ const projects = [
     {
         id: 0,
         sort: 1,
-        title: "VirtualRealty",
+        title: "Virtual Realty",
         img: "https://i.imgur.com/GLajEK2.png",
         description: "This is my CAPSTONE project from my bootcamp.",
         technologies: [
@@ -85,7 +85,7 @@ const projects = [
     {
         id: 3,
         sort: 1,
-        title: "Pokemon Tracker",
+        title: "Poké Portal",
         img: "https://i.imgur.com/wbSFzPq.png",
         description: "Pokemon-Tracker is my second project for my bootcamp, it makes use of a free pokemon api to populate the ''pokedex'' with amost 1,000 pokemon. From this ''pokedex'', you as a user can view stats for an individual pokemon as well as add them to / create a team of up to 5 pokemon of your choice, name it and share it for anyone to be able to view. This website used full CRUD functionality and stores all of the data using MongoAtlas.",
         technologies: [
