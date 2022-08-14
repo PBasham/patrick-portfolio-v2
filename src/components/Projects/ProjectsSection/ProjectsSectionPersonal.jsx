@@ -1,7 +1,7 @@
 export const ProjectsSectionPersonal = () => {
   return (
-    <>
-        Personal
-    </>
+    <div className="projects-personal">
+        <h2>Nothing here to how quite yet.</h2>
+    </div>
   )
 }

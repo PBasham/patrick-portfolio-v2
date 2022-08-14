@@ -12,6 +12,7 @@ import { Home } from "../../components/Home/Home.jsx"
 import { About } from "../../components/About/About.jsx"
 import { Projects } from "../../components/Projects/Projects.jsx"
 import { Contact } from "../../components/Contact/Contact.jsx"
+import { Skills } from "../../components/Skills/Skills.jsx"
 
 export const ProfilePage = () => {
 
@@ -36,10 +37,11 @@ export const ProfilePage = () => {
                     <About />
                     <Projects />
                     <Contact /> */}
-                    {navLinks.activeNavLink === 0 ? <Home navLinks={navLinks} setNavLinks={setNavLinks}/> : null}
-                {navLinks.activeNavLink === 1 ? <About /> : null}
-                {navLinks.activeNavLink === 2 ? <Projects /> : null}
-            {navLinks.activeNavLink === 3 ? <Contact /> : null}
+                    {navLinks.activeNavLink === 0 ? <Home navLinks={navLinks} setNavLinks={setNavLinks} /> : null}
+                    {navLinks.activeNavLink === 1 ? <About /> : null}
+                    {navLinks.activeNavLink === 2 ? <Projects /> : null}
+                    {navLinks.activeNavLink === 3 ? <Skills /> : null}
+                    {navLinks.activeNavLink === 4 ? <Contact /> : null}
                 </div>
             </div>
         </>

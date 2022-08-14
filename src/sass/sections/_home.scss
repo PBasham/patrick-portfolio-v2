@@ -4,18 +4,23 @@
     justify-content: center;
     height: 100vh;
 
+    div {
+        // box-shadow: 0 0 1px 1px paleturquoise;
+    }
     .home-content {
         display: flex;
+        justify-content: space-between;
         @media (max-width: 1000px) {
             flex-direction: column;
         }
+        // box-shadow: 0 0 1px 1px paleturquoise;
     }
     .img-div {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 60vh;
-        // min-width: 30vw;
+        width: clamp(200px, 40%,500px);
         border-radius: 20px;
         overflow: hidden;
 

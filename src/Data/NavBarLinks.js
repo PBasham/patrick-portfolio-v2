@@ -12,11 +12,16 @@ const navLinks = [
     },
     {
         id: 2,
+        name: "SKILLS",
+        to: "skills"
+    },
+    {
+        id: 3,
         name: "PROJECTS",
         to: "projects"
     },
     {
-        id: 3,
+        id: 4,
         name: "CONTACT",
         to: "contact"
     },

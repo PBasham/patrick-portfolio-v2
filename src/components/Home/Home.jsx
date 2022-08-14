@@ -22,7 +22,7 @@ export const Home = ({ navLinks, setNavLinks }) => {
                             <Typewriter
                                 options={{
                                     strings: [
-                                        "am a software engineer.",
+                                        "am a Jr Web Developer.",
                                         "thrive to optimize.",
                                         "am always looking to learn more.",
                                         "am highly motivated.",

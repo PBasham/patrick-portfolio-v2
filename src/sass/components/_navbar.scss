@@ -3,7 +3,8 @@
 .nav {
     display: grid;
     grid-template-columns: 175px;
-    grid-template-rows: 1.25fr 1fr 1fr;
+    grid-template-rows: 1.25
+    fr 1fr 1fr;
     position: sticky;
     top: 0;
     min-height: 100vh;
@@ -28,7 +29,7 @@
         justify-content: center;
         align-items: center;
         list-style: none;
-        font-weight: lighter;
+        font-weight: 300;
     }
     li {
         margin: .4em;
