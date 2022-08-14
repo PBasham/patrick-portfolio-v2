@@ -85,7 +85,8 @@
                     text-align: center;
                     line-height: 2rem;
                     user-select: none;
-
+                    font-family: $font-project-title;
+                    z-index: 100;
                 }
             }
 

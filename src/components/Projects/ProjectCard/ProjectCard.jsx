@@ -26,7 +26,7 @@ export const ProjectCard = ({ project, handleProjectClick }) => {
                 {project.technologies.map((tech, index) => (
                     <li key={index} >
                         {/* <div>{tech[0]}</div> */}
-                        <p>{tech[1]}</p>
+                        <p>{tech[1]} /</p>
                     </li>
                 ))}
             </ul>

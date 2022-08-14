@@ -4,10 +4,10 @@
     flex-direction: column;
     top: 0;
     width: 90%;
-    div {
-    }
-    
-    > div {
+
+    div {}
+
+    >div {
         width: 100%;
     }
 
@@ -57,15 +57,20 @@
                 // height: 100%;
                 .details-title,
                 .technologies-title {
-                    font-size: clamp(1.3rem, 1.3rem + .5vw, 2rem);
+                    font-size: clamp(1.3rem, 1.3rem + .3vw, 2rem);
                     color: $color-yellow;
+                    font-family: $font-project-title;
+                    font-weight: $font-project-title-reg;
+                    
                 }
 
                 .description {
                     margin: 10px 0 10px 0;
-                    font-size: clamp(1rem, 1rem + .3vw, 2rem);
                     min-height: 200px;
                     color: white;
+                    font-size: clamp(1rem, 1rem + .3vw, 2rem);
+                    font-family: $font-description;
+                    font-weight: $font-technologies-light;
                 }
 
                 .technologies {
@@ -76,6 +81,8 @@
                     min-height: 75px;
                     list-style: none;
                     font-size: 1.2rem;
+                    font-family: $font-description;
+                    font-weight: $font-technologies-light;
                     color: white;
 
                     li {
@@ -106,9 +113,11 @@
                     text-decoration: none;
                     background-color: $color-yellow;
                     transition: 250ms ease;
-                    & + a {
+
+                    &+a {
                         margin-left: 1em;
                     }
+
                     &:hover {
                         background-color: $color-yellowHover;
                     }
@@ -220,6 +229,7 @@
                         position: relative;
                         overflow: hidden;
                         z-index: 50;
+
                         .title-shape-div {
                             display: grid;
                             place-items: center;
@@ -230,6 +240,7 @@
                             // height: 300px;
                             position: absolute;
                         }
+
                         img {
                             width: 500px;
                             height: 300px;
@@ -253,12 +264,14 @@
                         flex-wrap: wrap;
                         height: 25%;
                         color: white;
+                        font-family: $font-description;
+                        font-weight: $font-technologies-light;
                         list-style: none;
                         z-index: 98;
 
                         li {
                             margin: .25em 0;
-                            padding: 0 .5em;
+                            padding: 0 .25em;
                             font-size: 1.1rem;
                         }
 
@@ -272,44 +285,47 @@
                         display: grid;
                         place-items: center;
                         position: relative;
-                        width: clamp(100px, 50%, 50%);
-                        height: 100px;
+                        width: clamp(100px, 30%, 30%);
+                        height: 75px;
                         background-color: $color-cardOverlay;
                         transition: 500ms ease;
                         z-index: 99;
-        
+
                         .title {
                             position: absolute;
                             text-align: center;
-                            font-size: 1.4rem;
+                            font-size: 1.2rem;
                             line-height: 2rem;
+                            font-family: $font-project-title;
+                            font-weight: $font-project-title-reg;
+                            
                             user-select: none;
                             z-index: 100;
                         }
                     }
-        
+
                     &-front::before {
                         content: "";
                         position: absolute;
                         right: -30px;
                         width: 0;
                         border-left: 30px solid $color-cardOverlay;
-                        border-top: 50px solid transparent;
-                        border-bottom: 50px solid transparent;
+                        border-top: 37.5px solid transparent;
+                        border-bottom: 37.5px solid transparent;
                         transition: 500ms ease;
-        
+
                     }
-        
+
                     &-front::after {
                         content: "";
                         position: absolute;
                         left: -30px;
                         width: 0;
                         border-right: 30px solid $color-cardOverlay;
-                        border-top: 50px solid transparent;
-                        border-bottom: 50px solid transparent;
+                        border-top: 37.5px solid transparent;
+                        border-bottom: 37.5px solid transparent;
                         transition: 500ms ease;
-        
+
                     }
 
                     // &.active {
