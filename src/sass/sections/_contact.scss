@@ -58,12 +58,13 @@
             font-size: 1rem;
             font-weight: bold;
             border: none;
+            border-radius: 20px;
             color: black;
             cursor: pointer;
             background-color: $color-yellow;
             transition: 250ms ease;
         }
-        
+
         input[type="submit"]:hover {
             background-color: $color-yellowHover;
         }

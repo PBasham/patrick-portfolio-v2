@@ -21,7 +21,7 @@
             #quote::before {
                 content: open-quote;
                 position: absolute;
-                font-size: clamp(10rem,3rem + 15vw,20rem);
+                font-size: clamp(10rem, 3rem + 15vw, 20rem);
                 font-family: $font-quote;
                 color: $color-accentOne;
                 top: -5rem;
@@ -60,6 +60,7 @@
             padding: .5em;
             width: clamp(200px, 22%, 300px);
             height: 200px;
+            border-radius: 20px;
             text-align: justify;
             background-color: $color-cardBackground;
             overflow: hidden;

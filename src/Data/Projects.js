@@ -3,7 +3,7 @@ const projects = [
         id: 0,
         sort: 1,
         title: "VirtualRealty",
-        img: "https://i.imgur.com/EMxFlcn.png",
+        img: "https://i.imgur.com/GLajEK2.png",
         description: "This is my CAPSTONE project from my bootcamp.",
         technologies: [
             [<i className="fa-brands fa-html5"></i>, "HTML"],
@@ -31,7 +31,7 @@ const projects = [
         id: 1,
         sort: 1,
         title: "LeetRigs",
-        img: "https://i.imgur.com/bWOnzkL.png",
+        img: "https://i.imgur.com/A8YGaND.png",
         description: "This is my third project from my bootcamp and was my first time working with a team using github to design a website and it's functionality. My team and I build out an e-commerce website featuring computer rigs and equipment. I was the lead for this project managing the Github branches, handling the styling and handling aspect of both the front and back end.",
         technologies: [
             [<i className="fa-brands fa-html5"></i>, "HTML"],

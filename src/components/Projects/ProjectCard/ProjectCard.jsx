@@ -14,7 +14,9 @@ export const ProjectCard = ({ project, handleProjectClick }) => {
             smooth={true}
             duration={500}
         >
-            <img src={project.img} alt="" />
+            <div className="img-div">
+                <img src={project.img} alt="" />
+            </div>
             <div className="project-card-front">
                 <p className="title">{project.title}</p>
             </div>

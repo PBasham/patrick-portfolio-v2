@@ -1,6 +1,7 @@
 /*========================================
         Import Dependencies
 ========================================*/
+import { Link as LinkScroll } from "react-scroll"
 import Typewriter from "typewriter-effect"
 
 export const Home = ({ navLinks, setNavLinks }) => {
