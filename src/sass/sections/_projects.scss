@@ -10,7 +10,7 @@
 
     >div {
         width: 100%;
-        box-shadow: 0 0 1px 1px aquamarine;
+        // box-shadow: 0 0 1px 1px aquamarine;
     }
 
     .project {
@@ -130,7 +130,8 @@
                 // padding: 0;
                 &-img {
                     height: 500px;
-                    width: calc(400px + 20vw);
+                    // width: calc(300px + 20vw);
+                    width: 100%;
                     // border-radius: 0;
                     img {
                         border-radius: 20px
