@@ -4,7 +4,6 @@
     flex-direction: column;
     min-height: 100vh;
 
-
     .quote-div {
         display: flex;
         justify-content: flex-end;
@@ -42,6 +41,7 @@
 
         @media (max-width: 1000px) {
             justify-content: center;
+
             .quote {
                 width: 80%;
             }
@@ -123,9 +123,7 @@
 
             }
 
-            &.active {
-
-            }
+            &.active {}
 
             &-back {
                 display: grid;
@@ -146,13 +144,16 @@
                 }
             }
         }
+
         @media (max-width: 800px) {
             &-card {
                 width: 100%;
+
                 img {
                     // height: 400px;
                     width: 100%;
                 }
+
                 &.active {
                     width: 100%;
                 }

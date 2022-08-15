@@ -59,7 +59,7 @@
                 .details-title,
                 .technologies-title {
                     font-size: clamp(1.3rem, 1.3rem + .3vw, 2rem);
-                    color: $color-yellow;
+                    color: $color-lightYellow;
                     font-family: $font-project-title;
                     font-weight: $font-project-title-reg;
 
@@ -102,6 +102,14 @@
                     display: flex;
                     align-items: flex-end;
                     height: 50px;
+                    // > div {
+                    //     background-color: red;
+                    //     height: 50px;
+                    // }
+                    .windup-message {
+                        margin: 0 0 .5em 1em;
+                        font-size: 1em;
+                    }
                 }
 
                 a {

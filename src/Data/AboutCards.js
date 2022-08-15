@@ -10,7 +10,7 @@ const aboutCards = [
         id: 1,
         img: "https://wallpaperaccess.com/full/2597534.jpg",
         name: "Start",
-        detail: "I managed multiple projects, both leading and supporting teams. I wanted to improve the process with the power of technology. The moment I rolled up my sleeves and learned to code, I loved it and there was no going back…only forward. Fast forward to now, as a Jr Web Dev.",
+        detail: "I managed multiple projects, both leading and supporting teams. I wanted to improve the process with the power of technology. The moment I rolled up my sleeves and learned to code, I loved it and there was no going back…only forward. Fast forward to now, I am a Jr Web Dev.",
         active: false,
     },
     {
@@ -24,7 +24,7 @@ const aboutCards = [
         id: 3,
         img: "https://cdn.mos.cms.futurecdn.net/y9siWhBdEnkwL9HhGakpQK.jpg",
         name: "Hobbies",
-        detail: "When I’m coding, I love to learn and play new songs on the piano, as well as mess around and make something of my own. ",
+        detail: "When I’m not coding, I love to learn and play new songs on the piano, as well as mess around and make something of my own. ",
         active: false,
     },
 ]

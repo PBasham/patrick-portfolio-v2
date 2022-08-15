@@ -17,7 +17,8 @@
                 text-align: justify;
                 font-size: clamp(1.2em, 1em + 1vw, 1.7em);
                 font-family: $font-headers;
-                color: $color-lightYellow;
+                // color: $color-lightYellow;
+                color: white;
                 line-height: 1.6em;
             }
         }
@@ -25,13 +26,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow: 0 0 1px 1px aqua;
+
             .skills-list {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
                 align-items: flex-end;
                 list-style: none;
+                gap: 2em;
                 i {
                     font-size: 3em;
                     // height: 80px;
