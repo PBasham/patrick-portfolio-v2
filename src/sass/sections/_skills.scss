@@ -1,0 +1,52 @@
+@use "../abstracts/index.scss" as *;
+
+.section-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    > div {
+        margin: 5em 0;
+    }
+
+    .skills {
+        &-text {
+            padding: 2em;
+            width: clamp(350px, 60%, 60%);
+            p {
+                font-size: 1.4em;
+                line-height: 1.6em;
+            }
+        }
+        &-list-div {
+            .skills-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: flex-end;
+                list-style: none;
+                i {
+                    font-size: 6em;
+                    height: 80px;
+                    margin-bottom: .25em;
+                    &.fa-cloud {
+                        font-size: 3.5em;
+                    }
+                }
+                p {
+                    font-size: clamp(1.2em, 2vw, 2em);
+                }
+                img {
+                    height: 80px;
+                }
+                &-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 1em;
+                }
+            }
+        }
+    }
+}
