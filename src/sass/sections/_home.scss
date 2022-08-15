@@ -10,6 +10,7 @@
     .home-content {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         @media (max-width: 1000px) {
             flex-direction: column;
         }
@@ -20,7 +21,7 @@
         justify-content: center;
         align-items: center;
         height: 60vh;
-        width: clamp(200px, 40%,500px);
+        width: clamp(200px, 100%,400px);
         border-radius: 20px;
         overflow: hidden;
 

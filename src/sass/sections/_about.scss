@@ -14,7 +14,7 @@
         .quote {
             position: relative;
             height: 200px;
-            width: clamp(200px, 50%, 100%);
+            width: clamp(300px, 40vw, 100%);
             font-size: clamp(1rem, 1rem + 2vw, 2.5rem);
             z-index: 10;
 
@@ -39,15 +39,21 @@
                 font-size: 2rem;
             }
         }
+
+        @media (max-width: 1000px) {
+            justify-content: center;
+            .quote {
+                width: 80%;
+            }
+        }
     }
 
     .about {
         &-cards {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             flex-wrap: wrap;
             align-items: center;
-            height: 50%;
             width: 100%;
 
         }
@@ -55,11 +61,13 @@
         &-card {
             display: grid;
             place-items: center;
-            margin: .5em;
+            margin: .7em;
             position: relative;
             padding: .5em;
-            width: clamp(200px, 22%, 300px);
-            height: 200px;
+            // width: clamp(200px, 30%, 300px);
+            // height: 200px;
+            height: 300px;
+            width: 300px;
             border-radius: 20px;
             text-align: justify;
             background-color: $color-cardBackground;
@@ -68,8 +76,9 @@
 
             img {
                 position: absolute;
-                height: 100%;
+                height: 300px;
                 user-select: none;
+                transition: 500ms ease;
             }
 
             &-front {
@@ -115,7 +124,6 @@
             }
 
             &.active {
-                height: 300px;
 
             }
 
@@ -135,6 +143,17 @@
 
                 .description {
                     text-align: center;
+                }
+            }
+        }
+        @media (max-width: 800px) {
+            &-card {
+                width: 100%;
+                img {
+                    height: 400px;
+                }
+                &.active {
+                    width: 100%;
                 }
             }
         }
