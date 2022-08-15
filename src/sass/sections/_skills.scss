@@ -7,18 +7,24 @@
     align-items: flex-end;
     > div {
         margin: 5em 0;
+        width: 80%;
     }
 
     .skills {
         &-text {
-            padding: 2em;
-            width: clamp(350px, 60%, 60%);
+            // width: clamp(350px, 60%, 60%);
             p {
-                font-size: 1.4em;
+                font-size: clamp(1.2em, 1em + 1vw, 1.7em);
+                font-family: $font-headers;
+                color: $color-lightYellow;
                 line-height: 1.6em;
             }
         }
         &-list-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 1px 1px aqua;
             .skills-list {
                 display: flex;
                 flex-wrap: wrap;
@@ -26,15 +32,15 @@
                 align-items: flex-end;
                 list-style: none;
                 i {
-                    font-size: 6em;
-                    height: 80px;
+                    font-size: 3em;
+                    // height: 80px;
                     margin-bottom: .25em;
                     &.fa-cloud {
                         font-size: 3.5em;
                     }
                 }
                 p {
-                    font-size: clamp(1.2em, 2vw, 2em);
+                    font-size: clamp(1.2em, 2vw, 1.2em);
                 }
                 img {
                     height: 80px;

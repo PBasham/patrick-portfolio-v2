@@ -12,7 +12,7 @@ const skills = [
     [<i className="fa-brands fa-html5" ></i >, <p>HTML5</p>],
     [<i className="fa-brands fa-css3-alt"></i>, <p>CSS3</p>],
     [<i className="devicon-sass-original colored"></i>, <p>Sass</p>],
-    [<i className="devicon-heroku-original colored" ></i >, <p>Heroku</p>],
+    [<i className="devicon-heroku-original" ></i >, <p>Heroku</p>],
     [<i className="devicon-git-plain colored"></i>, <p>Git</p>],
 ]
 

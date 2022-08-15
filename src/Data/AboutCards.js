@@ -1,14 +1,14 @@
 const aboutCards = [
     {
         id: 0,
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVUwzRTQeOHnd52t9idvRKiO6s7crMBe6kmg&usqp=CAU",
+        img: "https://wallpaperaccess.com/full/4668704.jpg",
         name: "Location",
         detail: "I’m currently based in New York, New York (the concrete jungle where dreams are made of)",
         active: false,
     },
     {
         id: 1,
-        img: "https://www.westend61.de/images/0001397788pw/close-up-of-sapling-growing-on-field-EYF06237.jpg",
+        img: "https://wallpaperaccess.com/full/2597534.jpg",
         name: "Start",
         detail: "I managed multiple projects, both leading and supporting teams. I wanted to improve the process with the power of technology. The moment I rolled up my sleeves and learned to code, I loved it and there was no going back…only forward. Fast forward to now, as a Jr Web Dev.",
         active: false,
