@@ -16,9 +16,10 @@
         align-items: center;
         width: 100%;
         max-width: 1500px;
-        padding: 40px 100px;
-        @media (max-width: 1000px) {
-            padding: 0;
+        padding: 40px clamp(1em, 2vw,100px);
+
+        @media (max-width: 1300px) {
+            // padding: 40px 0;
         }
     }
 }

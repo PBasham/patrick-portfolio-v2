@@ -4,7 +4,7 @@ const projects = [
         sort: 1,
         title: "Virtual Realty",
         img: "https://i.imgur.com/GLajEK2.png",
-        description: "This is my CAPSTONE project from my bootcamp.",
+        description: "Software Engineering Immersive (SEI) Bootcamp Project 4/ Capstone - A real estate page",
         technologies: [
             [<i className="fa-brands fa-html5"></i>, "HTML"],
             [<i className="fa-brands fa-css3-alt"></i>, "CSS"],
@@ -32,7 +32,7 @@ const projects = [
         sort: 1,
         title: "LeetRigs",
         img: "https://i.imgur.com/A8YGaND.png",
-        description: "This is my third project from my bootcamp and was my first time working with a team using github to design a website and it's functionality. My team and I build out an e-commerce website featuring computer rigs and equipment. I was the lead for this project managing the Github branches, handling the styling and handling aspect of both the front and back end.",
+        description: "Software Engineering Immersive (SEI) Bootcamp Project 3 - An e-commerce website featuring computer rigs and equipment. My team and I utilized Github to collaborate and mitigate the risk of conflicting code. I set up and organized the React components to dynamically render the desired data when the user navigates to any section. As the project lead, I managed the Github branches, designed the UI/UX and set up the logic and functions to ensure the front-end elements interact with the back-end.",
         technologies: [
             [<i className="fa-brands fa-html5"></i>, "HTML"],
             [<i className="fa-brands fa-css3-alt"></i>, "CSS"],
@@ -65,7 +65,7 @@ const projects = [
         sort: 1,
         title: "Dungeon Fighter",
         img: "https://i.imgur.com/SCh6dgB.png",
-        description: "This was my very first project for my bootcamp General Assembly, the goal was to create a game using html Canvas and Javascript that had a win and lose condition. This features animations within canvas with javascript to handle the logic for interactions.",
+        description: "Software Engineering Immersive (SEI) Bootcamp Project 1 - A turn-based game with a win-lose condition. This features animations using Canvas (with JavaScript) to handle the logic for additional combat interactions, exploration and a pseudo-inventory system.",
         technologies: [
             [<i className="fa-brands fa-html5"></i>, "HTML"],
             [<i className="fa-brands fa-css3-alt"></i>, "CSS"],
@@ -87,7 +87,7 @@ const projects = [
         sort: 1,
         title: "Poké Portal",
         img: "https://i.imgur.com/wbSFzPq.png",
-        description: "Pokemon-Tracker is my second project for my bootcamp, it makes use of a free pokemon api to populate the ''pokedex'' with amost 1,000 pokemon. From this ''pokedex'', you as a user can view stats for an individual pokemon as well as add them to / create a team of up to 5 pokemon of your choice, name it and share it for anyone to be able to view. This website used full CRUD functionality and stores all of the data using MongoAtlas.",
+        description: "Software Engineering Immersive (SEI) Bootcamp Project 2 - A personalizable Pokedex. Using a free pokemon API to populate the Pokedex, the user has access to almost 1,000 pokemon. The user can view stats for any individual pokemon, as well as  create/add them to a team of up to 5 pokemon which the user can name and share with anyone. This website uses full CRUD functionality and stores all of the data using MongoAtlas.",
         technologies: [
             [<i className="fa-brands fa-html5"></i>,"HTML"],
             [<i className="fa-brands fa-css3-alt"></i>,"CSS"],
