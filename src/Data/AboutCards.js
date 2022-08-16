@@ -10,7 +10,7 @@ const aboutCards = [
         id: 1,
         img: "https://wallpaperaccess.com/full/2597534.jpg",
         name: "Start",
-        detail: "I managed multiple projects, both leading and supporting teams. I wanted to improve the process with the power of technology. The moment I rolled up my sleeves and learned to code, I loved it and there was no going back…only forward. Fast forward to now, I am a Jr Web Dev.",
+        detail: "As a former Project Manager, both leading and supporting teams, I wanted to improve the process with the power of technology. The moment I rolled up my sleeves and learned to code, I loved it and there was no going back…only forward. Fast forward to now, I am a Jr Web Dev.",
         active: false,
     },
     {
