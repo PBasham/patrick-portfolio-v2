@@ -35,7 +35,7 @@ export const Home = ({ navLinks, setNavLinks }) => {
                         </div>
                     </div>
                     <a onClick={() => {
-                        setNavLinks({ ...navLinks, activeNavLink: 3 })
+                        setNavLinks({ ...navLinks, activeNavLink: 4 })
                     }}>Hire me</a>
                 </div>
             </div>
