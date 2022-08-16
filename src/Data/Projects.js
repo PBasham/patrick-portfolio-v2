@@ -4,7 +4,7 @@ const projects = [
         sort: 1,
         title: "Virtual Realty",
         img: "https://i.imgur.com/GLajEK2.png",
-        description: "Software Engineering Immersive (SEI) Bootcamp Project 4/ Capstone - A real estate page",
+        description: "Software Engineering Immersive (SEI) Bootcamp Project 4/ Capstone - A real estate page. VirtualRealty is targeted to create an experience of seeing homes, without ever leaving the comfort of your home (like virtual reality). I included features that I wish to see in real estate websites (like a monthly payment estimator, concierge services, etc.). As the final project, I also wanted to utilize State as much as possible by rendering the components and data that would allow to update and re-render upon user interaction: (1) Tracking which clicked components to render the corresponding components in navigation; (2) Keeping track of user so the components will render and display correct information; (3) Allowing users to view their own data; (4) Communicating with the back-end to pull corresponding data; and (5) Tracking current rendered list, homes, etc. (based on filters)",
         technologies: [
             [<i className="fa-brands fa-html5"></i>, "HTML"],
             [<i className="fa-brands fa-css3-alt"></i>, "CSS"],

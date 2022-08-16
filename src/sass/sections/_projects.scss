@@ -56,23 +56,47 @@
                 position: relative;
                 padding-left: clamp(1em, 5vw, 6em);
 
-                .details-title,
-                .technologies-title {
-                    font-size: clamp(1.3rem, 1.3rem + .3vw, 2rem);
+                .details-title {
+                    font-size: clamp(1.3rem, 1.3rem + .5vw, 2rem);
                     color: $color-lightYellow;
                     font-family: $font-project-title;
-                    font-weight: $font-project-title-reg;
-
+                    
+                }
+                .technologies-title,
+                .collaborators-title {
+                    font-size: clamp(1.3rem, 1.3rem + .1vw, 2rem);
+                    color: $color-lightYellow;
+                    font-family: $font-project-title;
                 }
 
                 .description {
                     margin: 10px 0 10px 0;
-                    min-height: 250px;
+                    min-height: 200px;
                     text-align: justify;
                     color: white;
-                    font-size: clamp(1rem, 1rem + .4vw, 2rem);
+                    font-size: clamp(1rem, 1rem + .15vw, 2rem);
                     font-family: $font-description;
                     font-weight: $font-technologies-light;
+                    ul {
+                        // margin-top: 20px;
+                    }
+                }
+
+                .collaborators {
+                    display: flex;
+                    list-style: none;
+                    margin-bottom: 1.5em;
+
+                    .collaborator {
+                        font-size: 1.1em;
+                        background-color: transparent;
+                        & + .collaborator {
+                            margin-left: 10px;
+                        }
+                        a {
+                            color: $color-yellow;
+                        }
+                    }
                 }
 
                 .technologies {
@@ -82,7 +106,7 @@
                     margin-top: 10px;
                     min-height: 75px;
                     list-style: none;
-                    font-size: clamp(1rem, 1rem + .4vw, 2rem);
+                    font-size: clamp(1rem, 1rem + .15vw, 2rem);
                     font-family: $font-description;
                     font-weight: $font-technologies-light;
                     color: white;
@@ -102,6 +126,7 @@
                     display: flex;
                     align-items: flex-end;
                     height: 50px;
+
                     // > div {
                     //     background-color: red;
                     //     height: 50px;
@@ -110,28 +135,29 @@
                         margin: 0 0 .5em 1em;
                         font-size: 1em;
                     }
+
+                    a {
+                        padding: 8px 15px;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        border: none;
+                        color: black;
+                        border-radius: 20px;
+                        cursor: pointer;
+                        text-decoration: none;
+                        background-color: $color-yellow;
+                        transition: 250ms ease;
+
+                        &+a {
+                            margin-left: 1em;
+                        }
+
+                        &:hover {
+                            background-color: $color-yellowHover;
+                        }
+                    }
                 }
 
-                a {
-                    padding: 8px 15px;
-                    font-size: 1rem;
-                    font-weight: bold;
-                    border: none;
-                    color: black;
-                    border-radius: 20px;
-                    cursor: pointer;
-                    text-decoration: none;
-                    background-color: $color-yellow;
-                    transition: 250ms ease;
-
-                    &+a {
-                        margin-left: 1em;
-                    }
-
-                    &:hover {
-                        background-color: $color-yellowHover;
-                    }
-                }
             }
 
             @media (max-width: 1000px) {

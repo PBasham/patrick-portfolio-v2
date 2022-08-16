@@ -17,7 +17,7 @@ const aboutCards = [
         id: 2,
         img: "https://d3mvlb3hz2g78.cloudfront.net/wp-content/uploads/2018/01/thumb_720_450_Gearsdreamstime_xl_89463027.jpg",
         name: "Ethic",
-        detail: "I love to code and love to challenge myself!",
+        detail: "My most important values are efficient project management; communicating and collaborating effectively; not just meet expectations, but exceed them; write optimal, reusable and clean code; learning more - for my work and for myself, always.",
         active: false,
     },
     {
