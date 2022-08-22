@@ -58,7 +58,7 @@ const projects = [
             },
         ],
         githubLink: "https://github.com/PBasham/mern-project-3",
-        deploymentLink: "https://leetrigs.herokuapp.com/",
+        deploymentLink: "https://leetrigs.herokuapp.com",
     },
     {
         id: 2,
@@ -106,7 +106,7 @@ const projects = [
             },
         ],
         githubLink: "https://github.com/PBasham/Pokemon-Tracker",
-        deploymentLink: "https://pb-poke-portal.herokuapp.com/",
+        deploymentLink: "https://pb-poke-portal.herokuapp.com",
     },
 ]
 

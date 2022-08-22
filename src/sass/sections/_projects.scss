@@ -60,8 +60,9 @@
                     font-size: clamp(1.3rem, 1.3rem + .5vw, 2rem);
                     color: $color-lightYellow;
                     font-family: $font-project-title;
-                    
+
                 }
+
                 .technologies-title,
                 .collaborators-title {
                     font-size: clamp(1.3rem, 1.3rem + .1vw, 2rem);
@@ -77,6 +78,7 @@
                     font-size: clamp(1rem, 1rem + .15vw, 2rem);
                     font-family: $font-description;
                     font-weight: $font-technologies-light;
+
                     ul {
                         // margin-top: 20px;
                     }
@@ -90,9 +92,11 @@
                     .collaborator {
                         font-size: 1.1em;
                         background-color: transparent;
-                        & + .collaborator {
+
+                        &+.collaborator {
                             margin-left: 10px;
                         }
+
                         a {
                             color: $color-yellow;
                         }
@@ -280,12 +284,15 @@
                     margin: 1.2em 0;
                     width: clamp(200px, 40%, 500px);
 
+
                     .img-div {
                         height: 200px;
                         border-radius: 20px;
                         margin-bottom: 1em;
                         position: relative;
                         overflow: hidden;
+                        cursor: pointer;
+
                         z-index: 50;
 
                         .title-shape-div {
