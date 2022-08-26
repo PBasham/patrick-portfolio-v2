@@ -35,7 +35,7 @@ export const NavBar = ({ navLinks, setNavLinks }) => {
                 <a id="link-linkedin" className="profile-link" href="https://www.linkedin.com/in/patrickbasham/" target="_blank">
                     <i className="fa fa-linkedin"></i>
                 </a>
-                <a className="resume" href="https://drive.google.com/file/d/1W1GC_vXaAQ8Dr2-SfeNAr3JQZYS63jqg/view?usp=sharing" target={"_blank"}>CV</a>
+                <a className="resume" href="https://drive.google.com/file/d/11nqCIAy09AXARdXCuH09Wh1aIagw2YEU/view?usp=sharing" target={"_blank"}>CV</a>
             </div>
         </div>
     )
