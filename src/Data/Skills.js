@@ -14,6 +14,8 @@ const skills = [
     [<i className="devicon-sass-original colored"></i>, <p>Sass</p>],
     [<i className="devicon-heroku-original" ></i >, <p>Heroku</p>],
     [<i className="devicon-git-plain colored"></i>, <p>Git</p>],
+    [<img className="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+      , <p>Figma</p>],
 ]
 
 export const getSkills = () => {
