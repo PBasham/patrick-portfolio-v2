@@ -119,7 +119,7 @@ export const personalProjects = [
         id: 0,
         sort: 1,
         title: "Habit Tracker",
-        img: "",
+        img: "http://topelforman.com/wp-content/uploads/2018/10/2018.02.08_aa.jpg",
         description: "Mobile App - Habit Tracker.",
         technologies: [
             [<i className="fa-brands fa-react"></i>, "React Native"],

@@ -36,8 +36,11 @@ export const Projects = () => {
 
     const [selectedProject, setSelectedProject] = useState(null)
 
-    const handleProjectClick = (id) => {
+    const handleBCProjectClick = (id) => {
         setSelectedProject(projectsBc[id])
+    }
+    const handlePersonalProjectClick = (id) => {
+        setSelectedProject(personalProjects[id])
     }
 
     const handleNavClick = (id) => {
@@ -58,12 +61,12 @@ export const Projects = () => {
             </div>
             <div className="project-list">
                 {projectsNav.activeSection === 0 ?
-                    <ProjectsSectionPersonal personalProjects={personalProjects} handleProjectClick={handleProjectClick} />
+                    <ProjectsSectionPersonal personalProjects={personalProjects} handleProjectClick={handlePersonalProjectClick} />
                     :
                     null
                 }
                 {projectsNav.activeSection === 1 ?
-                    <ProjectsSectionBootcamp projectsBc={projectsBc} handleBcProjClick={handleProjectClick}/>
+                    <ProjectsSectionBootcamp projectsBc={projectsBc} handleBcProjClick={handleBCProjectClick}/>
                     :
                     null
                 }
