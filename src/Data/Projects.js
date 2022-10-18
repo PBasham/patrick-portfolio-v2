@@ -1,4 +1,4 @@
-const projects = [
+const bootcampProjects = [
     {
         id: 0,
         sort: 1,
@@ -111,5 +111,31 @@ const projects = [
 ]
 
 export const getProjects = () => {
-    return projects
+    return bootcampProjects
 }
+
+export const personalProjects = [
+    {
+        id: 0,
+        sort: 1,
+        title: "Habit Tracker",
+        img: "",
+        description: "Mobile App - Habit Tracker.",
+        technologies: [
+            [<i className="fa-brands fa-react"></i>, "React Native"],
+            [<i className="fa-brands fa-js"></i>, "JavaScript"],
+            [<i className="fa-brands fa-css3-alt"></i>, "CSS"],
+            [<i className="fa fa-github"></i>, "Github"],
+        ],
+        collaboration: false,
+        team: [
+            {
+                id: 0,
+                name: "",
+                githubLink: "",
+            },
+        ],
+        githubLink: "hhttps://github.com/PBasham/rn-habit-tracker",
+        deploymentLink: "",
+    },
+]

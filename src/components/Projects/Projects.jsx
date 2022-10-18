@@ -3,7 +3,7 @@
 ========================================*/
 import { useState, useEffect } from "react"
 import { ProjectNav } from "./ProjectNav/ProjectNav"
-import { getProjects } from "../../Data/Projects.js"
+import { getProjects, personalProjects } from "../../Data/Projects.js"
 /*========================================
         Import components
 ========================================*/
@@ -36,7 +36,7 @@ export const Projects = () => {
 
     const [selectedProject, setSelectedProject] = useState(null)
 
-    const handleBcProjClick = (id) => {
+    const handleProjectClick = (id) => {
         setSelectedProject(projectsBc[id])
     }
 
@@ -58,12 +58,12 @@ export const Projects = () => {
             </div>
             <div className="project-list">
                 {projectsNav.activeSection === 0 ?
-                    <ProjectsSectionPersonal />
+                    <ProjectsSectionPersonal personalProjects={personalProjects} handleProjectClick={handleProjectClick} />
                     :
                     null
                 }
                 {projectsNav.activeSection === 1 ?
-                    <ProjectsSectionBootcamp projectsBc={projectsBc} handleBcProjClick={handleBcProjClick}/>
+                    <ProjectsSectionBootcamp projectsBc={projectsBc} handleBcProjClick={handleProjectClick}/>
                     :
                     null
                 }
