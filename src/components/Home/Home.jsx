@@ -4,7 +4,7 @@
 import { useEffect } from "react"
 import { Link } from "react-router-dom"
 import Typewriter from "typewriter-effect"
-import ReactGA from "ReactGA"
+import ReactGA from "react-ga"
 
 export const Home = ({ setNavLinks }) => {
 
