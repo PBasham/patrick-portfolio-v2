@@ -54,7 +54,6 @@ export const ProfilePage = () => {
                     <div className="section">
                         <Routes>
                             <Route path="/home" element={<Home navLinks={navLinks} setNavLinks={setNavLinks} />} />
-
                             <Route path="/about" element={<About setNavLinks={setNavLinks} />} />
 
                             <Route path="/skills" element={<Skills setNavLinks={setNavLinks} />} />
@@ -62,7 +61,7 @@ export const ProfilePage = () => {
                             <Route path="/projects" element={<Projects setNavLinks={setNavLinks} />} />
 
                             <Route path="/contact" element={<Contact setNavLinks={setNavLinks} />} />
-                            <Route path="/*" element={<Navigate to="/home" />} />
+                            {/* <Route path="/*" element={<Navigate to="/home" />} /> */}
                         </Routes>
                     </div>
                 </Router>
