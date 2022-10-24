@@ -2,28 +2,28 @@ const navLinks = [
     {
         id: 0,
         name: "HOME",
-        to: "home"
-        
+        to: "/home"
+
     },
     {
         id: 1,
         name: "ABOUT",
-        to: "about"
+        to: "/about"
     },
     {
         id: 2,
         name: "SKILLS",
-        to: "skills"
+        to: "/skills"
     },
     {
         id: 3,
         name: "PROJECTS",
-        to: "projects"
+        to: "/projects"
     },
     {
         id: 4,
         name: "CONTACT",
-        to: "contact"
+        to: "/contact"
     },
 ]
 

@@ -1,7 +1,7 @@
 /*========================================
         Import Dependencies
 ========================================*/
-import { Link as LinkScroll } from "react-scroll"
+import { Link } from "react-router-dom"
 
 export const NavBar = ({ navLinks, setNavLinks }) => {
 
@@ -13,19 +13,20 @@ export const NavBar = ({ navLinks, setNavLinks }) => {
             </div>
             <ul className="nav-btns">
                 {navLinks.allNavLinks.map((link) => (
-                    <li
-                        key={link.id}
-                    >
-                        <LinkScroll
+                    // <li
+                        // key={link.id}
+                    // >
+                        <Link
+                            key={link.id}
                             to={link.to}
                             className={`nav-btn ${link.id === navLinks.activeNavLink ? "active" : ""}`}
                             onClick={() => { setNavLinks({ ...navLinks, activeNavLink: link.id }) }}
-                            smooth={true}
-                            duration={750}
-                            >
+                            // smooth={true}
+                            // duration={750}
+                        >
                             {link.name}
-                        </LinkScroll>
-                    </li>
+                        </Link>
+                    // </li>
                 ))}
             </ul>
             <div className="nav-socials">
