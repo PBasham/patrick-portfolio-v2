@@ -36,7 +36,7 @@ export const ProfilePage = () => {
         const TRACKING_ID = "UA-246697468-1"
         ReactGA.initialize(TRACKING_ID)
         // report page view
-        ReactGA.pageview(window.location.pathname + window.location.search)
+        // ReactGA.pageview(window.location.pathname + window.location.search)
 
         setNavLinks((navLinks) => {
             return {
@@ -62,7 +62,7 @@ export const ProfilePage = () => {
                             <Route path="/projects" element={<Projects setNavLinks={setNavLinks} />} />
 
                             <Route path="/contact" element={<Contact setNavLinks={setNavLinks} />} />
-                            <Route path="/*" element={<Navigate to="/home" />} />
+                            <Route path="/*" element={<Navigate to="/Home" />} />
                         </Routes>
                     </div>
                 </Router>
