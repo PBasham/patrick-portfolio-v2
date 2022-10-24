@@ -14,7 +14,7 @@ import { Projects } from "../../components/Projects/Projects.jsx"
 import { Contact } from "../../components/Contact/Contact.jsx"
 import { Skills } from "../../components/Skills/Skills.jsx"
 // Google Analytics --------------------------------------------------
-import ReactGa from "react-ga"
+import ReactGA from "react-ga"
 // Router --------------------------------------------------
 import {
     BrowserRouter as Router,
@@ -33,9 +33,9 @@ export const ProfilePage = () => {
 
     useEffect(() => {
         // Google Analytics
-        ReactGa.initialize('G-H00VRMLXP5')
+        ReactGA.initialize('G-H00VRMLXP5')
         // report page view
-        ReactGa.pageview("/")
+        ReactGA.pageview(window.location.pathname + window.location.search)
 
         setNavLinks((navLinks) => {
             return {
