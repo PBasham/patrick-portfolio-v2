@@ -4,6 +4,7 @@
 import { useEffect } from "react"
 import { Link } from "react-router-dom"
 import Typewriter from "typewriter-effect"
+// Google Analytics --------------------------------------------------
 import ReactGA from "react-ga"
 
 export const Home = ({ setNavLinks }) => {
@@ -15,6 +16,7 @@ export const Home = ({ setNavLinks }) => {
                 activeNavLink: 0
             }
         })
+        ReactGA.pageview(window.location.pathname + window.location.search)
     },[])
 
     const handleClickGA = () => {

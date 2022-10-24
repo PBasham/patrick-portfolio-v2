@@ -3,6 +3,8 @@
 ========================================*/
 import { useState, useEffect } from "react"
 import { getSkills } from "../../Data/Skills"
+// Google Analytics --------------------------------------------------
+import ReactGA from "react-ga"
 /*========================================
         Import Components
 ========================================*/
@@ -20,6 +22,7 @@ export const Skills = ({ setNavLinks }) => {
                 activeNavLink: 2
             }
         })
+        ReactGA.pageview(window.location.pathname + window.location.search)
     }, [])
 
     return (

@@ -24,6 +24,7 @@ export const Projects = ({ setNavLinks }) => {
                 activeNavLink: 3
             }
         })
+        ReactGA.pageview(window.location.pathname + window.location.search)
     }, [])
 
 

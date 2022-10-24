@@ -2,6 +2,8 @@
         Import Dependencies
 ========================================*/
 import { useEffect } from "react"
+// Google Analytics --------------------------------------------------
+import ReactGA from "react-ga"
 
 
 export const Contact = ({ setNavLinks }) => {
@@ -13,7 +15,7 @@ export const Contact = ({ setNavLinks }) => {
                     activeNavLink: 4
                 }
             })
-    
+            ReactGA.pageview(window.location.pathname + window.location.search)
         }, [])
     
     return (
