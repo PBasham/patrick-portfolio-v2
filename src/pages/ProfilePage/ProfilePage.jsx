@@ -36,7 +36,7 @@ export const ProfilePage = () => {
         const TRACKING_ID = "UA-246697468-1"
         ReactGA.initialize(TRACKING_ID)
         // report page view
-        // ReactGA.pageview(window.location.pathname + window.location.search)
+        ReactGA.pageview(window.location.pathname + window.location.search)
 
         setNavLinks((navLinks) => {
             return {
