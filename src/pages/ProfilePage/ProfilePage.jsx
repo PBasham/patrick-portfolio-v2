@@ -33,7 +33,8 @@ export const ProfilePage = () => {
 
     useEffect(() => {
         // Google Analytics
-        ReactGA.initialize('G-H00VRMLXP5')
+        const TRACKING_ID = "UA-246697468-1"
+        ReactGA.initialize(TRACKING_ID)
         // report page view
         ReactGA.pageview(window.location.pathname + window.location.search)
 
@@ -62,11 +63,6 @@ export const ProfilePage = () => {
 
                             <Route path="/contact" element={<Contact setNavLinks={setNavLinks} />} />
                             <Route path="/*" element={<Navigate to="/home" />} />
-                            {/* {navLinks.activeNavLink === 0 ? <Home navLinks={navLinks} setNavLinks={setNavLinks} /> : null}
-                            {navLinks.activeNavLink === 1 ? <About /> : null}
-                            {navLinks.activeNavLink === 2 ? <Skills /> : null}
-                            {navLinks.activeNavLink === 3 ? <Projects /> : null}
-                            {navLinks.activeNavLink === 4 ? <Contact /> : null} */}
                         </Routes>
                     </div>
                 </Router>
