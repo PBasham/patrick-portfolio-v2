@@ -22,7 +22,7 @@ export const Skills = ({ setNavLinks }) => {
                 activeNavLink: 2
             }
         })
-        ReactGA.pageview(window.location.pathname + window.location.search)
+        ReactGA.pageview("/skills")
     }, [])
 
     return (

@@ -11,7 +11,7 @@ import ReactGA from "react-ga"
 import { AboutCards } from "../AboutCards/AboutCards"
 
 
-export const About = ({aboutCards, setNavLinks}) => {
+export const About = ({ aboutCards, setNavLinks }) => {
 
     useEffect(() => {
         setNavLinks((current) => {
@@ -32,7 +32,7 @@ export const About = ({aboutCards, setNavLinks}) => {
                 </div>
             </div>
             <div className="about-cards">
-                <AboutCards  />
+                <AboutCards />
             </div>
         </div>
     )

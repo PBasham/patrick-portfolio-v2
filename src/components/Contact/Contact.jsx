@@ -7,17 +7,17 @@ import ReactGA from "react-ga"
 
 
 export const Contact = ({ setNavLinks }) => {
-    
+
     useEffect(() => {
-            setNavLinks((current) => {
-                return {
-                    ...current,
-                    activeNavLink: 4
-                }
-            })
-            ReactGA.pageview(window.location.pathname + window.location.search)
-        }, [])
-    
+        setNavLinks((current) => {
+            return {
+                ...current,
+                activeNavLink: 4
+            }
+        })
+        ReactGA.pageview("/contact")
+    }, [])
+
     return (
         <div id="contact" className="section-contact">
             <p>Contact me to chat about job or freelance opportunities</p>
@@ -25,7 +25,7 @@ export const Contact = ({ setNavLinks }) => {
                 <label htmlFor="email">Email<input name="email" type="email" /></label>
                 <label htmlFor="name">Name<input name="name" type="text" /></label>
                 <label htmlFor="message">Message<textarea name="message" id="" cols="10" rows="10"></textarea></label>
-                <input type="submit"  value="Send Email"/>
+                <input type="submit" value="Send Email" />
             </form>
         </div>
     )

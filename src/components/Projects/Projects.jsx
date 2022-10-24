@@ -24,7 +24,7 @@ export const Projects = ({ setNavLinks }) => {
                 activeNavLink: 3
             }
         })
-        ReactGA.pageview(window.location.pathname + window.location.search)
+        ReactGA.pageview("/projects")
     }, [])
 
 
@@ -47,7 +47,7 @@ export const Projects = ({ setNavLinks }) => {
     })
 
     const projectsBc = getProjects()
-    
+
 
     const [selectedProject, setSelectedProject] = useState(null)
 
@@ -81,7 +81,7 @@ export const Projects = ({ setNavLinks }) => {
                     null
                 }
                 {projectsNav.activeSection === 1 ?
-                    <ProjectsSectionBootcamp projectsBc={projectsBc} handleBcProjClick={handleBCProjectClick}/>
+                    <ProjectsSectionBootcamp projectsBc={projectsBc} handleBcProjClick={handleBCProjectClick} />
                     :
                     null
                 }

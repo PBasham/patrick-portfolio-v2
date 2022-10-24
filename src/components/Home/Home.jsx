@@ -9,7 +9,7 @@ import ReactGA from "react-ga"
 
 export const Home = ({ setNavLinks }) => {
 
-    useEffect(() =>{
+    useEffect(() => {
         setNavLinks((current) => {
             return {
                 ...current,
@@ -17,7 +17,7 @@ export const Home = ({ setNavLinks }) => {
             }
         })
         ReactGA.pageview("/home")
-    },[])
+    }, [])
 
     const handleClickGA = () => {
         ReactGA.event({
