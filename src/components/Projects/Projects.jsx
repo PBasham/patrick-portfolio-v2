@@ -4,6 +4,8 @@
 import { useState, useEffect } from "react"
 import { ProjectNav } from "./ProjectNav/ProjectNav"
 import { getProjects, personalProjects } from "../../Data/Projects.js"
+// Google Analytics --------------------------------------------------
+import ReactGA from "react-ga"
 /*========================================
         Import components
 ========================================*/
@@ -15,6 +17,7 @@ import { ProjectsSectionAll } from "./ProjectsSection/ProjectsSectionAll.jsx"
 export const Projects = ({ setNavLinks }) => {
 
     useEffect(() => {
+
         setNavLinks((current) => {
             return {
                 ...current,
