@@ -49,18 +49,18 @@ export const ProfilePage = () => {
         <>
             <div className="profile-page">
                 <Router>
-                    <NavBar navLinks={navLinks} setNavLinks={setNavLinks} />
+                    <NavBar navLinks={navLinks} />
                     <div className="section">
                         <Routes>
                             <Route path="/home" element={<Home navLinks={navLinks} setNavLinks={setNavLinks} />} />
 
-                            <Route path="/about" element={<About />} />
+                            <Route path="/about" element={<About setNavLinks={setNavLinks} />} />
 
-                            <Route path="/skills" element={<Skills />} />
+                            <Route path="/skills" element={<Skills setNavLinks={setNavLinks} />} />
 
-                            <Route path="/projects" element={<Projects />} />
+                            <Route path="/projects" element={<Projects setNavLinks={setNavLinks} />} />
 
-                            <Route path="/contact" element={<Contact />} />
+                            <Route path="/contact" element={<Contact setNavLinks={setNavLinks} />} />
                             <Route path="/*" element={<Navigate to="/home" />} />
                             {/* {navLinks.activeNavLink === 0 ? <Home navLinks={navLinks} setNavLinks={setNavLinks} /> : null}
                             {navLinks.activeNavLink === 1 ? <About /> : null}

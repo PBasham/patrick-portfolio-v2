@@ -3,7 +3,7 @@
 ========================================*/
 import { Link } from "react-router-dom"
 
-export const NavBar = ({ navLinks, setNavLinks }) => {
+export const NavBar = ({ navLinks }) => {
 
 
     return (
@@ -20,9 +20,6 @@ export const NavBar = ({ navLinks, setNavLinks }) => {
                             key={link.id}
                             to={link.to}
                             className={`nav-btn ${link.id === navLinks.activeNavLink ? "active" : ""}`}
-                            onClick={() => { setNavLinks({ ...navLinks, activeNavLink: link.id }) }}
-                            // smooth={true}
-                            // duration={750}
                         >
                             {link.name}
                         </Link>

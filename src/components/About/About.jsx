@@ -1,11 +1,25 @@
 
 /*========================================
+        Import Dependencies
+========================================*/
+import { useEffect } from "react"
+/*========================================
         Import components
 ========================================*/
-
 import { AboutCards } from "../AboutCards/AboutCards"
 
-export const About = ({aboutCards}) => {
+
+export const About = ({aboutCards, setNavLinks}) => {
+
+    useEffect(() => {
+        setNavLinks((current) => {
+            return {
+                ...current,
+                activeNavLink: 1
+            }
+        })
+    }, [])
+
     return (
         <div id="about" className="section-about">
             <div className="quote-div">

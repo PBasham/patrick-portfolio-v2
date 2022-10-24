@@ -1,8 +1,21 @@
-export const Contact = () => {
-    // const handleSubmit = (e) => {
-    //     e.preventDefault()
-    //     console.log("I've been submitted!")
-    // }
+/*========================================
+        Import Dependencies
+========================================*/
+import { useEffect } from "react"
+
+
+export const Contact = ({ setNavLinks }) => {
+    
+    useEffect(() => {
+            setNavLinks((current) => {
+                return {
+                    ...current,
+                    activeNavLink: 4
+                }
+            })
+    
+        }, [])
+    
     return (
         <div id="contact" className="section-contact">
             <p>Contact me to chat about job or freelance opportunities</p>

@@ -12,7 +12,18 @@ import { ProjectsSectionBootcamp } from "./ProjectsSection/ProjectsSectionBootca
 import { ProjectsSectionPersonal } from "./ProjectsSection/ProjectsSectionPersonal.jsx"
 import { ProjectsSectionAll } from "./ProjectsSection/ProjectsSectionAll.jsx"
 
-export const Projects = () => {
+export const Projects = ({ setNavLinks }) => {
+
+    useEffect(() => {
+        setNavLinks((current) => {
+            return {
+                ...current,
+                activeNavLink: 3
+            }
+        })
+    }, [])
+
+
     const [projectsNav, setProjectsNav] = useState({
         activeSection: 1,
         allSections: [
