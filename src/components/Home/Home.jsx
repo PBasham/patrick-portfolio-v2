@@ -4,6 +4,7 @@
 import { useEffect } from "react"
 import { Link } from "react-router-dom"
 import Typewriter from "typewriter-effect"
+import ReactGA from "ReactGA"
 
 export const Home = ({ setNavLinks }) => {
 
@@ -15,6 +16,13 @@ export const Home = ({ setNavLinks }) => {
             }
         })
     },[])
+
+    const handleClickGA = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click 'Hire me' button on  Home Page"
+        })
+    }
 
     return (
         <div id="home" className="section-home">
@@ -45,7 +53,7 @@ export const Home = ({ setNavLinks }) => {
                             />
                         </div>
                     </div>
-                    <Link to="/contact" >Hire me</Link>
+                    <Link onClick={handleClickGA} to="/contact" >Hire me</Link>
                 </div>
             </div>
         </div>
