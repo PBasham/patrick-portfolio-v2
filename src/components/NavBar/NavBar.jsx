@@ -2,9 +2,17 @@
         Import Dependencies
 ========================================*/
 import { Link } from "react-router-dom"
+import ReactGA from "react-ga"
 
 export const NavBar = ({ navLinks }) => {
 
+    const handleClickGA = (page) => {
+
+        ReactGA.event({
+            category: "Navigation Button",
+            action: `Click on nav button to access ${page} page.`
+        })
+    }
 
     return (
         <div className="nav">
@@ -20,6 +28,7 @@ export const NavBar = ({ navLinks }) => {
                             key={link.id}
                             to={link.to}
                             className={`nav-btn ${link.id === navLinks.activeNavLink ? "active" : ""}`}
+                            onClick={() => handleClickGA(link.to)}
                         >
                             {link.name}
                         </Link>
