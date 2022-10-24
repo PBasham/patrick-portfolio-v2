@@ -13,6 +13,8 @@ import { About } from "../../components/About/About.jsx"
 import { Projects } from "../../components/Projects/Projects.jsx"
 import { Contact } from "../../components/Contact/Contact.jsx"
 import { Skills } from "../../components/Skills/Skills.jsx"
+import ReactGa from "react-ga"
+// import
 
 export const ProfilePage = () => {
 
@@ -22,6 +24,11 @@ export const ProfilePage = () => {
     })
 
     useEffect(() => {
+        // Google Analytics
+        ReactGa.initialize('G-H00VRMLXP5')
+        // report page view
+        ReactGa.pageview("/")
+
         setNavLinks({
             ...navLinks,
             allNavLinks: getNavLinks()
