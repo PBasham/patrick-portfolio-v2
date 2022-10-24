@@ -1,10 +1,21 @@
 /*========================================
         Import Dependencies
 ========================================*/
+import { useEffect } from "react"
 import { Link } from "react-router-dom"
 import Typewriter from "typewriter-effect"
 
-export const Home = ({ navLinks, setNavLinks }) => {
+export const Home = ({ setNavLinks }) => {
+
+    useEffect(() =>{
+        setNavLinks((current) => {
+            return {
+                ...current,
+                activeNavLink: 0
+            }
+        })
+    },[])
+
     return (
         <div id="home" className="section-home">
             <div className="home-content">
