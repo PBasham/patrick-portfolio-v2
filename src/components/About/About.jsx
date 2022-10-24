@@ -20,7 +20,8 @@ export const About = ({ aboutCards, setNavLinks }) => {
                 activeNavLink: 1
             }
         })
-        ReactGA.pageview("/about")
+        // ReactGA.pageview("/about")
+        ReactGA.ga('send', 'pageview', '/about')
     }, [])
 
     return (
