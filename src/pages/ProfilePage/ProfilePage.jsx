@@ -20,6 +20,7 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
+    Navigate
 } from "react-router-dom"
 
 
@@ -60,7 +61,7 @@ export const ProfilePage = () => {
                             <Route path="/projects" element={<Projects setNavLinks={setNavLinks} />} />
 
                             <Route path="/contact" element={<Contact setNavLinks={setNavLinks} />} />
-                            {/* <Route path="*" element={<Navigate to="/home" />} /> */}
+                            <Route path="*" element={<Navigate to="/home" />} />
                         </Routes>
                     </div>
                 </Router>
