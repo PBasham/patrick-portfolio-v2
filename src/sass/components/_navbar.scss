@@ -1,31 +1,29 @@
 @use "../abstracts/" as *;
 
 .nav {
+
+    .hamburger-menu-div {
+        display: none;
+    }
+
     display: grid;
-    // grid-template-columns: 200px;
-    grid-template-rows: 1.5fr 1.5fr 1fr;
+
     position: sticky;
+    grid-template-rows: 1.5fr 1.5fr 1fr;
     top: 0;
+
     width: 250px;
     min-height: 100vh;
-    height: 100%;
-    opacity: 1;
     background-color: rgba(0, 0, 0, 0.106);
-    // background: linear-gradient(50deg, rgba(96, 58, 105, 0.8) 15%, rgba(40, 174, 170, 0.8) 80%);
+
+    opacity: 1;
     z-index: 99;
     transition: width 500ms ease;
 
-    >div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 2em;
-        // min-height: 150px;
-    }
 
     &-logo {
         position: relative;
+
         img {
             padding: 2em;
             position: absolute;
@@ -41,9 +39,11 @@
         list-style: none;
         font-weight: 300;
     }
+
     li {
         margin: .4em;
     }
+
     &-btn {
         font-size: 1.5rem;
         cursor: pointer;
@@ -58,14 +58,18 @@
         }
     }
 
-    &-socials {
-        align-self: flex-start;
+    .nav-socials {
+        display: flex;
+        // align-self: flex-start;
+        align-items: center;
+        flex-direction: column;
 
         i {
             margin-bottom: .5em;
             font-size: 2rem;
             color: black;
         }
+
         .resume {
             color: black;
             text-decoration: none;
@@ -73,24 +77,99 @@
             font-size: 1.6em;
             font-weight: 800;
         }
+
         :hover {
             transition: 250ms ease;
             color: white;
         }
     }
+
+    // mobile Styling ------------------------------------------------------------
     @media (max-width: 800px) {
-        width: 75px;
-        div { 
-            display: none;
-            opacity: 0;
+
+        // set list to block,
+        .hamburger-menu-div {
+            display: block;
+
+            padding: 2em;
+            height: 100%;
+
         }
+
+        .hamburger-menu::before,
+        .hamburger-menu::after,
+        .hamburger-menu {
+            content: "";
+            position: relative;
+            width: 50px;
+            height: 7px;
+            border-radius: 15px;
+            background-color: white;
+        }
+
+        .hamburger-menu::before {
+            position: absolute;
+            top: -.8em;
+        }
+
+        .hamburger-menu::after {
+            position: absolute;
+            bottom: -.8em;
+
+        }
+
+        display: flex;
+
+        flex-direction: column;
+        position: absolute;
+
+        width: 100vw;
+        min-height: 0;
+        height: 75px;
+
+        background-color: palegreen;
+
+        transition: 250ms ease;
+
+
+        &-logo {
+            img {
+                display: none;
+            }
+        }
+
         &-btns {
-            // display: none;
-        }
-        &-btn {
             display: none;
-            opacity: 0;
         }
 
     }
+
+    .nav-socials {
+        display: none;
+    }
+
+    .nav-open .nav-socials {}
+
+    &.nav-open {
+
+        height: 80%;
+        background-color: red;
+
+        & .nav-socials {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            align-self: center;
+
+            margin-top: 1em;
+            width: 50%;
+
+            i,
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+
 }
