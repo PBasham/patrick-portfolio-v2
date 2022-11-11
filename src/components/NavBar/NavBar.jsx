@@ -28,7 +28,10 @@ export const NavBar = ({ navLinks }) => {
         setNavOpen(false)
     }
 
-
+    const handleNavClick = (gaLink) => {
+        handleClickGA(gaLink)
+        handleNavClose()
+    }
 
 
     return (
@@ -48,7 +51,7 @@ export const NavBar = ({ navLinks }) => {
                         key={link.id}
                         to={link.to}
                         className={`nav-btn ${link.id === navLinks.activeNavLink ? "active" : ""}`}
-                        onClick={() => handleClickGA(link.to)}
+                        onClick={() => handleNavClick(link.to)}
                     >
                         {link.name}
                     </Link>
