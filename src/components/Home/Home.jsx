@@ -29,10 +29,9 @@ export const Home = ({ setNavLinks }) => {
     return (
         <div id="home" className="section-home">
             <div className="home-content">
-
-                <div className="img-div">
-                    <img src="./img/profile_pic.jpg" alt="Picture of me!" />
-                </div>
+                    <div className="img-div">
+                        <img src="./img/profile_pic.jpg" alt="Picture of me!" />
+                    </div>
                 <div className="text-div">
 
                     <div className="text">

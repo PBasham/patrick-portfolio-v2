@@ -20,17 +20,42 @@
             justify-content: center;
             align-items: center;
             position: relative;
-            // width: 400px;
-            width: clamp(200px, 100%,400px);
+            width: clamp(200px, 100%, 325px);
             aspect-ratio: 1;
             border-radius: 20px;
-            overflow: hidden;
-
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, 0.108);
+            // overflow: hidden;
+            
             img {
                 position: absolute;
                 height: 100%;
+                // width: clamp(200px, 100%, 375px);
+                border-radius: 50%;
             }
         }
+        // Glowing effect ----------------------------------------
+        // .img-div::before {
+        //     content: "";
+        //     position: absolute;
+        //     top: -2px;
+        //     left: -2px;
+        //     width: calc(100% + 5px);
+        //     height: calc(100% + 5px);
+        //     background: linear-gradient(45deg, yellow, orange, green, lightblue, pink, violet, purple, red, blue);
+        //     background-size: 400%;
+            
+        //     border-radius: 50%;
+
+        //     filter: blur(40px);
+        //     z-index: -1;
+        //     animation: color_rotate 20s normal infinite;
+        // }
+        // Animation ----------------------------------------
+        // @keyframes color_rotate {
+        //     0% { background-position: 0 0;}
+        //     100% { background-position: 400% 0;}
+        // }
     }
 
 
