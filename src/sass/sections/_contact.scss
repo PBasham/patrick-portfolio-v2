@@ -79,4 +79,7 @@
             background-color: $color-yellowHover;
         }
     }
+    @media (max-width: 800px) {
+        margin-top: 4em;
+    }
 }

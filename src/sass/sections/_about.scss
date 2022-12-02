@@ -144,18 +144,22 @@
         }
 
         @media (max-width: 800px) {
+            
             &-card {
                 width: 100%;
-
+                
                 img {
                     // height: 400px;
                     width: 100%;
                 }
-
+                
                 &.active {
                     width: 100%;
                 }
             }
         }
+    }
+    @media (max-width: 800px) {
+        margin-top: 2em;
     }
 }
