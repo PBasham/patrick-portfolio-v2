@@ -38,7 +38,7 @@ export const Home = ({ setNavLinks }) => {
                         <h1>Hello,</h1>
                         <p>My name is Patrick Basham and I
                         </p>
-                        <div className="typed-text text-teal">
+                        <div className="typed-text">
                             <Typewriter
                                 options={{
                                     strings: [

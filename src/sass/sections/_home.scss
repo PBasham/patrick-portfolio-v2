@@ -60,6 +60,7 @@
         .typed-text {
             position: absolute;
             font-size: clamp(1em, 1em + 2vw, 2rem);
+            color: $color-yellow;
         }
     }
 
