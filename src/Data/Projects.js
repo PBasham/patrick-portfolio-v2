@@ -121,7 +121,8 @@ export const personalProjects = [
         title: "Unnamed Habit Tracker Mobile App",
         img: "http://topelforman.com/wp-content/uploads/2018/10/2018.02.08_aa.jpg",
         description: <p>Unnamed Habit Tracker application is an application built for the better good, focusing on mental health that has full CRUD functionality where the user can:
-        <br/>• Create and track Goals/Habits set with due dates and frequency  throughout the day/week/month.\n• Track their daily moods.
+        <br/>• Create and track Goals/Habits set with due dates and frequency  throughout the day/week/month.
+        <br/>• Track their daily moods.
         <br/>• Create Journal Entries.
         <br/>• View completion rates of their goals, as well as use their mood tracker/journal entries to make connections between their goal/habit completion and figure out what's helping/hindering.</p>,
         technologies: [
