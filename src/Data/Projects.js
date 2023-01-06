@@ -118,13 +118,18 @@ export const personalProjects = [
     {
         id: 0,
         sort: 1,
-        title: "Habit Tracker",
+        title: "Unnamed Habit Tracker Mobile App",
         img: "http://topelforman.com/wp-content/uploads/2018/10/2018.02.08_aa.jpg",
-        description: "Mobile App - Habit Tracker.",
+        description: <p>Unnamed Habit Tracker application is an application built for the better good, focusing on mental health that has full CRUD functionality where the user can:
+        <br/>• Create and track Goals/Habits set with due dates and frequency  throughout the day/week/month.\n• Track their daily moods.
+        <br/>• Create Journal Entries.
+        <br/>• View completion rates of their goals, as well as use their mood tracker/journal entries to make connections between their goal/habit completion and figure out what's helping/hindering.</p>,
         technologies: [
             [<i className="fa-brands fa-react"></i>, "React Native"],
             [<i className="fa-brands fa-js"></i>, "JavaScript"],
+            [<i class="devicon-typescript-plain colored"></i>, "TypeScript"],
             [<i className="fa-brands fa-css3-alt"></i>, "CSS"],
+            [<i className="fa fa-git"></i>, "Git"],
             [<i className="fa fa-github"></i>, "Github"],
         ],
         collaboration: false,
